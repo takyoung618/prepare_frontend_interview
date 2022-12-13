@@ -163,7 +163,7 @@ HTML 문서가 어떤 내용을 담고 있고, 키워드는 무엇이며, 누가
 <meta name="author" content="TCPSchool" />
 ```
 
-#### ④ 5초 뒤에 다른 페이지로 리다이렉트(redirect)시키기
+#### ④ 5초 뒤에 다른 페이지로 리다이렉트(redirect)시키기..
 
 ```html
 <meta http-equiv="refresh" content="5;url=http://www.tcpschool.com" />
