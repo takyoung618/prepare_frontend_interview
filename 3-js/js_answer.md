@@ -146,13 +146,6 @@
   - [이벤트](#이벤트)
     - [마우스 이벤트 타입에는 뭐가 있나요? click 말고 클릭을 대체할 수 있는 이벤트가 있나요?](#마우스-이벤트-타입에는-뭐가-있나요-click-말고-클릭을-대체할-수-있는-이벤트가-있나요)
     - [그 외에 알고 있는 대표적인 이벤트가 있나요?](#그-외에-알고-있는-대표적인-이벤트가-있나요)
-    - [키보드 이벤트](#키보드-이벤트)
-    - [포커스 이벤트](#포커스-이벤트)
-    - [폼 이벤트](#폼-이벤트)
-    - [값 변경 이벤트](#값-변경-이벤트)
-    - [DOM 뮤테이션 이벤트](#dom-뮤테이션-이벤트)
-    - [뷰 이벤트](#뷰-이벤트)
-    - [리소스 이벤트](#리소스-이벤트)
     - [이벤트 핸들러를 등록하는 방식에는 어떤 것들이 있나요?](#이벤트-핸들러를-등록하는-방식에는-어떤-것들이-있나요)
     - [이벤트 전파(propagation)에 대해서 알고 있나요?](#이벤트-전파propagation에-대해서-알고-있나요)
     - [이벤트 위임(delegation)에 대해서 알고있나요?](#이벤트-위임delegation에-대해서-알고있나요)
@@ -163,18 +156,10 @@
     - [타이머 함수에는 어떤 것들이 있나요?](#타이머-함수에는-어떤-것들이-있나요)
     - [이벤트가 과도하게 호출되어 성능에 문제를 일으킬 경우에 할 수 있는 어떤 일을 통해 해결할 수 있나요?](#이벤트가-과도하게-호출되어-성능에-문제를-일으킬-경우에-할-수-있는-어떤-일을-통해-해결할-수-있나요)
     - [디바운스에 대해서 알고 있나요?](#디바운스에-대해서-알고-있나요)
-    - [result 💻](#result-)
     - [쓰로틀에 대해서 알고 있나요?](#쓰로틀에-대해서-알고-있나요)
-    - [result 💻](#result--1)
   - [비동기 프로그래밍](#비동기-프로그래밍)
     - [동기와 비동기의 차이점에 대해서 설명해줄 수 있나요?](#동기와-비동기의-차이점에-대해서-설명해줄-수-있나요)
-      - [스택구조](#스택구조)
-      - [태스크](#태스크)
-      - [동기 코드 예시](#동기-코드-예시)
-      - [비동기 코드 예시](#비동기-코드-예시)
-      - [한줄 요약](#한줄-요약)
     - [이벤트 루프와 태스크 큐에 대해서 알고 있나요?](#이벤트-루프와-태스크-큐에-대해서-알고-있나요)
-      - [큐 (queue)](#큐-queue)
     - [다음과 같은 코드에서 이벤트 루프와 태스크 큐가 어떻게 동작하는지 설명해볼 수 있나요?](#다음과-같은-코드에서-이벤트-루프와-태스크-큐가-어떻게-동작하는지-설명해볼-수-있나요)
     - [마이크로태스크 큐에 대해서 알고 있나요?](#마이크로태스크-큐에-대해서-알고-있나요)
     - [태스크 큐와 마이크로태스크 큐 중 어떤 것이 먼저 실행되나요?](#태스크-큐와-마이크로태스크-큐-중-어떤-것이-먼저-실행되나요)
@@ -184,22 +169,12 @@
     - [JSON 이 뭔가요?](#json-이-뭔가요)
     - [JSON이 제공하는 정적 프로토타입 메서드에 대해 몇가지 말해볼 수 있나요?](#json이-제공하는-정적-프로토타입-메서드에-대해-몇가지-말해볼-수-있나요)
     - [Ajax로 HTTP 요청을 보내기 위해서는 어떤 방법을 사용할 수 있나요?](#ajax로-http-요청을-보내기-위해서는-어떤-방법을-사용할-수-있나요)
-      - [HTTP GET 요청 전송](#http-get-요청-전송)
-      - [HTTP POST 요청 전송](#http-post-요청-전송)
-      - [HTTP 응답 처리](#http-응답-처리)
-      - [Response 객체](#response-객체)
-      - [fetch로 CRUD 구현하기](#fetch로-crud-구현하기)
     - [XMLHttpRequest와 fetch 메서드의 차이는 무엇이라고 생각하시나요?](#xmlhttprequest와-fetch-메서드의-차이는-무엇이라고-생각하시나요)
   - [REST API](#rest-api)
     - [REST API가 뭔가요?](#rest-api가-뭔가요)
     - [REST API의 구성은 어떤 것이 있나요?](#rest-api의-구성은-어떤-것이-있나요)
     - [REST API를 설계하는데 중요한 것이 있을까요?](#rest-api를-설계하는데-중요한-것이-있을까요)
     - [HTTP 요청 메서드에 대해서 아는대로 얘기해보세요](#http-요청-메서드에-대해서-아는대로-얘기해보세요)
-      - [GET 요청 (전체)](#get-요청-전체)
-      - [GET 요청 (일부)](#get-요청-일부)
-      - [POST 요청](#post-요청)
-      - [PATCH 요청](#patch-요청)
-      - [DELETE 요청](#delete-요청)
     - [HTTP 상태 코드를 아는대로 말해주세요](#http-상태-코드를-아는대로-말해주세요)
   - [Promise](#promise)
     - [콜백이란 뭐라고 생각하나요?](#콜백이란-뭐라고-생각하나요)
@@ -211,19 +186,14 @@
     - [`제너레이터란 뭔가요? 일반 함수와는 어떤 차이가 있죠?`](#제너레이터란-뭔가요-일반-함수와는-어떤-차이가-있죠)
     - [`제너레이터의 구조`](#제너레이터의-구조)
     - [`async/await 가 뭔가요? 기존의 Promise와는 어떤 차이가 있죠?`](#asyncawait-가-뭔가요-기존의-promise와는-어떤-차이가-있죠)
-      - [`async 함수`](#async-함수)
-      - [`await 키워드`](#await-키워드)
-      - [`async await 키워드를 사용하는 경우`](#async-await-키워드를-사용하는-경우)
-      - [`프로미스의 정적 메서드 Promise.all을 사용하는 경우`](#프로미스의-정적-메서드-promiseall을-사용하는-경우)
     - [`Promise와 async/await의 차이점 한 줄 요약`](#promise와-asyncawait의-차이점-한-줄-요약)
   - [에러](#에러)
     - [`에러처리를 왜 해야 하나요?`](#에러처리를-왜-해야-하나요)
-      - [에러를 처리를 하지 않을 경우](#에러를-처리를-하지-않을-경우)
-      - [에러 처리를 할 경우](#에러-처리를-할-경우)
     - [`자바스크립트에서 에러를 처리하는 방법에는 뭐가 있을까요?`](#자바스크립트에서-에러를-처리하는-방법에는-뭐가-있을까요)
   - [모듈](#모듈)
     - [`모듈이 뭔가요?`](#모듈이-뭔가요)
   - [내가 뽑은 핵심질문 5개](#내가-뽑은-핵심질문-5개)
+  - [스터디원이 뽑은 핵심질문](#스터디원이-뽑은-핵심질문)
 
 ## 프로그래밍
 
@@ -278,10 +248,6 @@ let score;
 
 ### var 키워드의 문제점은 무엇이 있나요?
 - 변수의 중복 선언을 허용하고, 함수 레벨 스코프의 특성을 가지며, 실행 단계에서 실제 값이 할당되지 않더라도 undefined를 가지는 이를 변수 호이스팅이 일어난다.
-
-1. 변수 중복 선언 허용
-2. 함수 레벨 스코프
-3. 변수 호이스팅
 
 <details>
 <summary>① 변수 중복 선언 허용</summary>
@@ -354,23 +320,10 @@ var score; // 변수 선언문
 ### let 키워드는 var 키워드와 어떤 점이 다른가요?
 - var와 달리 let 키워드는 변수 중복 선언이 불가능하며, 블록 레벨 스코프를 따르고, 변수 호이스팅이 일어나지 않습니다.
 
-```
-1. 변수 중복 선언 금지
-2. 블록 레벨 스코프
-3. 변수 호이스팅
-4. 전역 객체와 let
-```
-
 <br/>
 
 ### const 키워드는 어떤 특징이 있나요?
 - const 키워드는 선언과 동시에 초기화해야 하며, 재할당이 불가하고, 선언한 변수에 원시 값을 할당한 경우 변수 값을 변경할 수 없습니다.
-
-```
-1. 선언과 초기화
-2. 재할당 금지
-3. 상수
-```
 
 <br/>
 
@@ -426,14 +379,6 @@ var observable$ = fromEvent(document, "click"); // RxJS 옵저버블
 | 원시 타입 |     BigInt 타입     | 길이의 제약 없이 정수를 다룰 수 있게 해주는 숫자형  |
 | 객체 타입 |                     |                 객체, 함수, 배열 등                 |
 
-<details>
-<summary>BigInt 타입 레퍼런스</summary>
-
-- [MDN: 원시 값](https://developer.mozilla.org/ko/docs/Glossary/Primitive)
-- [MDN: BigInt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt)
-- [javascript tutorial](https://www.javascripttutorial.net/javascript-data-types/)
-
-</details>
 
 <br/>
 
@@ -443,7 +388,6 @@ var observable$ = fromEvent(document, "click"); // RxJS 옵저버블
 <br/>
 
 ### 데이터 타입은 왜 필요할까요?
-
 1. 값을 저장할 때 확보해야 하는 메모리 공간의 크기를 결정하기 위해
 2. 값을 참조할 때 한 번에 읽어 들여야 할 메모리 공간의 크기를 결정하기 위해
 3. 메모리에서 읽어 들인 2진수를 어떻게 해석할지 결정하기 위해
@@ -516,53 +460,12 @@ if (!"") console.log("" + " is falsy value");
 <br/>
 
 ### 배열의 메서드는 어떤 종류가 있나요?
-- 원본 배열을 직접 변경하는 메서드와 원본 배열을 직접 변경하지 않고 새로운 배열을 생성하여 반환하는 메서드가 있습니다.
-
-배열은 크게 두 종류로 나눌 수 있다
-
-- `① 원본 배열을 직접 변경하는 메서드 `
-
-- `② 원본 배열을 직접 변경하지 않고 새로운 배열을 생성하여 반환하는 메서드`가 있다.
-
-ES5부터 도입된 배열 메서드는 대부분 원본 배열을 직접 변경하지 않지만 초창기 배열 메서드는 원본 배열을 직접 변경하는 경우가 많다.
-
-원본 배열을 직접 변경하는 메서드는 외부 상태를 직접 변경하는 부수효과가 있으므로 사용할 때 주의해야 한다.
-
-가급적 원본 배열을 직접 변경하지 않는 메서드를 사용하는 편이 좋다.
-
-```
-Array.isArray 🌟
-Array.prototype.indexOf 🌟
-Array.prototype.push (원본 배열을 변경한다 - 부수효과 o)
-Array.prototype.pop (원본 배열을 변경한다 - 부수효과 o)
-Array.prototype.unshift (원본 배열을 변경한다 - 부수효과 o)
-Array.prototype.shift (원본 배열을 변경한다 - 부수효과 o)
-Array.prototype.concat 🌟
-Array.prototype.splice 🌟 (원본 배열을 변경한다 - 부수효과 o)
-Array.prototype.slice 🌟
-Array.prototype.join 🌟 (원본 배열을 변경한다 - 부수효과 o)
-Array.prototype.reverse 🌟 (원본 배열을 변경한다 - 부수효과 o)
-Array.prototype.fill 🌟 (원본 배열을 변경한다 - 부수효과 o)
-Array.prototype.includes 🌟
-```
+- 원본 배열을 직접 변경하여 부수 효과를 발생시키는 메서드와 원본 배열을 직접 변경하지 않고 새로운 배열을 생성하여 반환하는 메서드가 있습니다.
 
 <br/>
 
 ### 고차 함수에 대해서 아나요?
 - 고차 함수는 함수를 인수로 전달받거나 함수를 반환하는 함수로 가변 데이터를 피하고 불변성을 지향하므로 프로그래밍의 안정성을 높입니다.
-
-`대부분의 고차 함수들은 파라미터로 콜백 함수를 받아 사용되기 때문에 원본 배열을 바탕으로 하는 새로운 결과값을 창조하는데 사용된다`
-
-```
-Array.prototype.sort (원본 배열을 변경한다 - 부수효과 o)
-Array.prototype.forEach
-Array.prototype.map
-Array.prototype.filter
-Array.prototype.reduce
-Array.prototype.some
-Array.prototype.every
-Array.prototype.find
-```
 
 <br/>
 
@@ -631,9 +534,6 @@ forEach 메서드와 마찬가지로 map 메서드의 콜백 함수는 map 메�
 <br/>
 
 ### 자바스크립트에서 객체를 생성하는 방법은 어떤 것들이 있나요?
-
-자바스크립트는 **'프로토타입 기반 객체지향 언어'** 로서 **'클래스 기반 객체지향 언어'** 와는 달리 다양한 객체 생성 방법을 지원한다.
-
 ```
 1.객체 리터럴
 2.Object 생성자 함수
@@ -1405,16 +1305,11 @@ console.log(colorRectangle.toString()); // width = 2, height = 4, color = red
 6. 인스턴스 반환
 
 #### 오버라이딩
-
-```
-상위(super) 클래스가 가지고 있는 메서드를 하위(sub) 클래스가 재정의하여 사용하는 방식
-```
+- 상위(super) 클래스가 가지고 있는 메서드를 하위(sub) 클래스가 재정의하여 사용하는 방식입니다.
 
 #### 오버로딩
+- 함수의 이름은 동일하지만 매개변수의 타입 또는 개수가 다른 메서드를 구현하고 매개변수에 의해 메서드를 구별하여 호출하는 방식이다.
 
-```
-함수의 이름은 동일하지만 매개변수의 타입 또는 개수가 다른 메서드를 구현하고 매개변수에 의해 메서드를 구별하여 호출하는 방식이다.
-```
 
 ## 스프레드 문법
 
@@ -1757,153 +1652,15 @@ async 어트리뷰트와 마찬가지로 HTML 파싱과 외부 자바스크립�
 - DOM은 HTML 문서의 계층적 구조와 정보를 표현하며 이를 제어할 수 있는 API를 제공하는 트리 자료구조다.
 
 ### DOM을 구성하는 건 뭐가 있나요?
-
-① HTML 요소는 렌더링 엔진에 의해 파싱되어 ② DOM을 구성하는 요소 노드 객체로 변환된다.
-
-이때 HTML 요소 어트리뷰트는 어트리뷰트 노드로, HTML 요소의 텍스트 콘텐츠는 텍스트 노드로 변환된다.
-
-DOM은 노드 객체의 계층적인 구조로 구성된다. 노드 객체는 종류가 있고 상속 구조를 갖는다.
-
-노드 객체는 총 12개의 종류(노드 타입)가 있다. 이 중에서 중요한 노드 타입은 다음과 같이 4가지다.
-
-1. 문서 노드
-2. 요소 노드
-3. 어트리뷰트 노드
-4. 텍스트 노드
-
-<details>
-
-<br/>
-
-<b>① 문서 노드</b>
-
-```
-<!DOCTYPE>
-```
-
-문서 노드는 DOM 트리의 최상위에 존재하는 루트 노드로서 document 객체를 가리킨다.
-
-document 객체는 브라우저가 렌더링한 HTML 문서 전체를 가리키는 객체로서 전역 객체 window의 document 프로퍼티에 바인딩되어 있다.
-
-따라서 문서 노드는 window.documnet 또는 document로 참조할 수 있다.
-
-브라우저 환경의 모든 자바스크립트 코드는 script 태그에 의해 분리되어 있어도 하나의 전역 객체 window를 공유한다.
-
-따라서 window의 document 프로퍼티에 바인딩되어 있는 하나의 document 객체를 바라본다. 즉, HTML 문서당 document 객체는 유일하다.
-
-<b>② 요소 노드</b>
-
-```html
-<html> <head> <meta> <link> <body> <ul> <li> <script>
-```
-
-요소 노드는 HTML 요소를 가리키는 객체다. 요소 노드는 HTML 요소 간의 중첩에 의해 부자 관계를 가지며, 이 부자 관계를 통해 정보를 구조화한다.
-
-따라서 요소 노드는 문서의 구조를 표현한다고 할 수 있다.
-
-<b>③ 어트리뷰트 노드</b>
-
-```
-charset="UTF"
-
-rel="stylesheet"
-...
-
-id="apple"
-```
-
-어트리뷰트 노드는 HTML 요소의 어트리뷰트를 가리키는 객체다. 어트리뷰트 노드는 어트리뷰트가 지정된 HTML 요소의 요소 노드와 연결되어 있다.
-
-<b>④ 텍스트 노드</b>
-
-```
-APPLE
-BANANA
-ORANGE
-```
-
-텍스트 노드는 HTML 요소와 텍스트를 가리키는 객체다. 요소 노드가 문서의 구조를 표현한다면 텍스트 노드는 문서의 정보를 표현한다고 할 수 있다.
-
-</details>
+- DOM은 노드 객체의 계층적인 구조로 구성됩니다. 노드 객체는 총 12개의 종류(노드 타입)가 있으며, 이 중에서 중요한 노드 타입은 문서 노드, 요소 노드, 어트리뷰트 노드, 텍스트 노드 등이 있습니다.
 
 ## 이벤트
 
 ### 마우스 이벤트 타입에는 뭐가 있나요? click 말고 클릭을 대체할 수 있는 이벤트가 있나요?
-
-> mouseup
-
-| 이벤트 타입 | 이벤트 발생 시점                                      |
-| :---------- | :---------------------------------------------------- |
-| click       | 마우스 버튼을 클릭했을 때                             |
-| dbclick     | 마우스 버튼을 더블 클릭했을 때                        |
-| mousedown   | 마우스 버튼을 누르고 있을 때                          |
-| mouseup     | 누르고 있던 마우스 버튼을 뗄 때                       |
-| mousemove   | 마우스 커서를 움직일 때                               |
-| mouseenter  | 마우스 커서를 HTML 요소 안으로 이동했을 때 (버블링 x) |
-| mouseover   | 마우스 커서를 HTML 요소 안으로 이동했을 때 (버블링 o) |
-| mouseleave  | 마우스 커서를 HTML 요소 밖으로 이동했을 때(버블링x)   |
-| mouseout    | 마우스 커서를 HTML 요소 밖으로 이동했을 때(버블링o)   |
-
-<br/>
+- dbclick, mousedown, mousemove 등이 있고 mouseup으로 click을 대체할 수 있습니다.
 
 ### 그 외에 알고 있는 대표적인 이벤트가 있나요?
-
-<details>
-
-### 키보드 이벤트
-
-| 이벤트 타입 | 이벤트 발생 시점                            |
-| :---------- | :------------------------------------------ |
-| keydown     | 키를 누르고 있을 때                         |
-| keypress    | 키를 누르고 뗏을 때 (폐지되었으므로 사용 x) |
-| keyup       | 누르고 있던 키를 뗄 때                      |
-
-### 포커스 이벤트
-
-| 이벤트 타입 | 이벤트 발생 시점                     |
-| :---------- | :----------------------------------- |
-| focus       | 요소가 포커스를 얻었을 때 (버블링 x) |
-| blur        | 요소가 포커스를 잃었을 때 (버블링 x) |
-| focusin     | 요소가 포커스를 얻었을 때 (버블링 o) |
-| foucusout   | 요소가 포커스를 잃었을 때 (버블링 o) |
-
-### 폼 이벤트
-
-| 이벤트 타입 | 이벤트 발생 시점                            |
-| :---------- | :------------------------------------------ |
-| submit      | form을 submit할 때 (버튼 또는 키)           |
-| reset       | reset 버튼을 클릭할 때 (최근에는 사용 안함) |
-
-### 값 변경 이벤트
-
-| 이벤트 타입 | 이벤트 발생 시점                                          |
-| :---------- | :-------------------------------------------------------- |
-| input       | input 또는 textarea 요소의 값이 변경되었을 때             |
-| change      | select box, checkbox, radio button의 상태가 변경되었을 때 |
-
-### DOM 뮤테이션 이벤트
-
-| 이벤트 타입      | 이벤트 발생 시점                                            |
-| :--------------- | :---------------------------------------------------------- |
-| DOMContentLoaded | HTML 문서의 로드와 파싱이 완료되어 DOM 생성이 완료되었을 때 |
-
-### 뷰 이벤트
-
-| 이벤트 타입 | 이벤트 발생 시점                                                |
-| :---------- | :-------------------------------------------------------------- |
-| resize      | 브라우저 윈도우의 크기를 리사이즈할 때 연속적으로 발생          |
-| scroll      | 웹피이지(document) 또는 HTML 요소를 스코롤할 때 연속적으로 발생 |
-
-### 리소스 이벤트
-
-| 이벤트 타입 | 이벤트 발생 시점                                           |
-| :---------- | :--------------------------------------------------------- |
-| load        | DOMContentLoaded 이후, 모든 리소스의 로딩이 완료되었을 때  |
-| unload      | 리소스가 언로드 될 때 (주로 새로운 웹페이지를 요청한 경우) |
-| abort       | 리소스 로딩이 중단되었을 때                                |
-| error       | 리소스 로딩이 실패했을 때                                  |
-
-</details>
+- 키보드 이벤트 중에는 keydown, keypress, keyup 등이 있고, 포커스 이벤트에는 focus, blur등이 있습니다.
 
 ### 이벤트 핸들러를 등록하는 방식에는 어떤 것들이 있나요?
 
@@ -1965,664 +1722,44 @@ ORANGE
 <br/>
 
 ### 이벤트 전파(propagation)에 대해서 알고 있나요?
-
-DOM 트리상에 존재하는 모든 DOM 요소 노드에서 발생한 이벤트는 DOM 트리를 통해 전파됩니다. 이를 이벤트 전파라고 합니다.
-
-사용자의 다양한 입력을 통해 동적으로 생성되는 이벤트 객체는 이벤트를 발생시킨 타깃(target)을 중심으로 DOM 트리를 통해 전파됩니다.
-
-전파되는 방향에 따라 3단계로 구분할 수 있습니다.
-
-- 캡처링 단계 : 이벤트가 상위 요소에서 하위 요소 방향으로 전파
-- 타깃 단계 : 이벤트가 이벤트 타깃에 도달
-- 버블링 단계: 이벤트가 하위 요소에서 상위 요소 방향으로 전파
-
-<details>
-<summary>3단계 이미지 보기</summary>
-
-<img src="./images/37_6.jpg" alt="이벤트 전파 3단계"/>
-
-</details>
-
-**브라우저는 기본적으로 이벤트 버블링 단계에서 이벤트를 캐치합니다.**
-
-```html
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div>Click me</div>
-  </body>
-  <script>
-    const html = document.querySelector("html");
-    const body = document.querySelector("body");
-    const div = document.querySelector("div");
-
-    html.addEventListener("click", () => console.log("HTML"));
-    body.addEventListener("click", () => console.log("BODY"));
-    div.addEventListener("click", () => console.log("DIV"));
-  </script>
-</html>
-```
-
-```js
->>>
-
-DIV
-BODY
-HTML
-```
-
-<img src="./images/37_7.png" alt="이벤트 버블링 타깃"/>
-
-이벤트 캡처링 단계라면 HTML > BODY > DIV 순으로 ① 상위 노드에서 ② 하위 노드로 내려오며 이벤트를 캐치할 것입니다.
-
-하지만 브라우저는 기본적으로 이벤트 버블링 단계인 **우리가 클릭하고자 한 이벤트 객체의 타깃인 &lt;div&gt; 에 도달한 후 다시 해당 ② 하위 노드에서 ① 상위 노드로 돌아가는 과정** 에서 이벤트를 캐치하기 때문입니다.
-
-물론 addEventListener 메서드의 세번째 인수(argument)로 옵션인 [, useCaputure] 자리에 boolean 값인 true를 넣어준다면, 캡처링 단계에서도 이벤트 객체를 캐치할 수 있습니다. (기본값으로는 false로, 버블링 단계에서 이벤트 객체를 캐치합니다)
-
-<img src="./images/37_8.png" alt="addEventListener">
-
-```js
-html.addEventListener("click", () => console.log("HTML"), true);
-body.addEventListener("click", () => console.log("BODY"), true);
-div.addEventListener("click", () => console.log("DIV"));
-
->>>
-
-HTML
-BODY
-DIV
-```
-
-<br/>
+- DOM 트리상에 존재하는 모든 DOM 요소 노드에서 발생한 이벤트는 DOM 트리를 통해 전파됩니다. 이를 이벤트 전파라고 합니다.
 
 ### 이벤트 위임(delegation)에 대해서 알고있나요?
-
-**연속되는 태그에 대해서 공통적으로 이벤트를 줘야할 때 우리가 이벤트 핸들러를 바인딩할 해당 요소의 부모 요소에게 이를 위임하여 이벤트를 진행하는 것** 을 이벤트 위임 (event delegation) 이라 합니다.
-
-<details>
-
-<summary>예제 코드 보기</summary>
-
-<br/>
-
-[예제 코드 실행하기 🔥](https://codepen.io/junh0328/pen/abwvZBN)
-
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>eventDelegation</title>
-    <meta charset="UTF-8" />
-    <style>
-      body {
-        font-family: sans-serif;
-      }
-      .btn-number {
-        background-color: yellowgreen;
-      }
-    </style>
-  </head>
-
-  <body>
-    <div class="container">
-      <button class="btn-number">1</button>
-      <button class="btn-number">2</button>
-      <button class="btn-number">3</button>
-      <button class="btn-number">4</button>
-      <button class="btn-number">5</button>
-    </div>
-    <script>
-      const div = document.querySelector("div");
-
-      div.addEventListener("click", (e) => {
-        console.log(e.target.innerHTML);
-      });
-    </script>
-  </body>
-</html>
-```
-
-```
-1
-```
-
-만약 공통되는 button 태그에 대해서 이벤트를 준다면, 버튼별 이벤트 ① onclick 또는 ② addEventListener 메서드를 사용하여 각 버튼에 해당되는 로직을 바인딩해줘야 할 것입니다.
-
-하지만 이벤트 위임(event delegation) 을 통해 부모 요소에 이 작업을 위임하여 현재 클릭하는 타깃 (e.target)에 대한 값을 출력할 수 있습니다.
-
-</details>
+- 연속되는 태그에 대해서 공통적으로 이벤트를 줘야할 때 우리가 이벤트 핸들러를 바인딩할 해당 요소의 부모 요소에게 이를 위임하여 이벤트를 진행하는 것입니다.
 
 ### e.preventDefault 에 대해 알고 있나요?
-
-e.preventDefault 메서드는 요소 태그의 기본 동작을 중단합니다.
-
-<details>
-<summary>예제 코드 보기</summary>
-
-```html
-<!DOCTYPE html>
-<html>
-  <body>
-    <a href="https://www.google.com">go</a>
-    <input type="checkbox" />
-    <script>
-      document.querySelector("a").onclick = (e) => {
-        // a 요소의 기본 동작을 중단한다.
-        e.preventDefault();
-      };
-
-      document.querySelector("input[type=checkbox]").onclick = (e) => {
-        // checkbox 요소의 기본 동작을 중단한다.
-        e.preventDefault();
-      };
-    </script>
-  </body>
-</html>
-```
-
-</details>
+- e.preventDefault 메서드는 요소 태그의 기본 동작을 중단합니다.
 
 ### e.stopPropagation
-
-e.stopPropagation 메서드는 이벤트 전파를 중지시키는 메서드입니다.
-
-이벤트 객체의 경우 상위 태그에도 같은 이벤트가 존재한다면 (예를 들면 click 어트리뷰트가 두 요소 모두 존재하는 경우) 상위 태그의 해당 콜백 함수를 호출하는 특징이 있습니다.
-
-<details>
-<summary> 예제 코드 보기 </summary>
-
-<br/>
-
-[예제코드보기 🔥](https://codepen.io/junh0328/pen/zYzvBzr)
-
-```html
-<!DOCTYPE html>
-<html>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-    }
-    div {
-      width: 100%;
-      height: 100vh;
-      background-color: tomato;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    button {
-      width: 100px;
-      height: 30px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  </style>
-  <body>
-    <div>
-      <button>Button</button>
-    </div>
-    <script>
-      const div = document.querySelector("div");
-      const button = document.querySelector("button");
-
-      div.addEventListener("click", () => {
-        console.log("DIV");
-      });
-
-      button.addEventListener("click", (e) => {
-        e.stopPropagation();
-        console.log("BUTTON");
-      });
-    </script>
-  </body>
-</html>
-```
-
-</details>
+- e.stopPropagation 메서드는 이벤트 전파를 중지시키는 메서드입니다.
 
 ## 타이머
 
 ### 호출 스케쥴링이 무엇인가요?
-
-함수를 명시적으로 호출하면 함수가 즉시 실행됩니다.
-
-```js
-function add(a, b) {
-  return a + b;
-}
-
-console.log(add(2, 5)); >>> 7;
-```
-
-만약 함수를 명시적으로 호출하지 않고 일정 시간이 경과된 이후에 호출되도록 함수 호출을 예약하려면, 타이머 함수를 사용해야 합니다.
-
-이렇게 **타이머 함수를 사용하여 명시적으로 호출하지 않고 일정 시간이 경기된 이후에 호출되도록 함수 호출을 예약하는 것** 을 **호출 스케쥴링이라고 합니다.**
+- 타이머 함수를 사용하여 명시적으로 호출하지 않고 일정 시간이 경기된 이후에 호출되도록 함수 호출을 예약하는 것을 호출 스케쥴링이라고 합니다.
 
 ### 타이머 함수에는 어떤 것들이 있나요?
-
 1. setTimeout/ clearTimeout
-
 2. setInterval/ clearInterval
 
-<b>① setTimeout/ clearTimeout</b>
-
-setTimeout 함수로 생성한 타이머는 한 번 동작합니다.
-
-<details>
-
-<br/>
-
-```js
-const timeoutdId = setTimeout(func|code[, delay, param1, param2, ...]);
-```
-
-| 매개변수            | 설명                                                                                                                                                         |
-| :------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| func                | 타이머가 만료된 뒤 호출될 콜백 함수 <br/> 콜백 함수 대신 코드를 문자열로 전달할 수 있다. 이때 코드 문자열은 타이머가 만료된 뒤 해석되고 실행된다.            |
-| delay               | 타이머 만료 시간(밀리초(ms) 단위), setTimeout 함수는 delay 시간으로 단 한 번 동작하는 타이머를 생성한다. <br/> 인수 전달을 생략한 경우 기본 값 0이 지정된다. |
-| param1, param2, ... | 호출 스케줄링된 콜백 함수에 전달해야 할 인수가 존재하는 경우 세 번째 이후의 인수로 전달할 수 있다.                                                           |
-
-</details>
-
-setTimeout 함수는 생성된 타이머를 식별할 수 있는 고유한 타이머를 식별할 수 있는 고유한 id를 반환한다.
-
-setTimeout 함수가 반환한 타이머 id는 ① 브라우저 환경일 경우 숫자이며 ② Node.js 환경인 경우 객체다
-
-```js
-// 1초(1000ms) 후 타이머가 만료되면 콜백 함수가 호출된다.
-setTimeout(() => console.log("Hi!"), 1000);
-
-// 세 번째 인수로 문자열 'Lee' 전달
-setTimeout((name) => console.log(`Hi! ${name}.`), 1000, "Lee");
-
-// 두 번째 인수(delay)를 생략하면 기본값 0이 지정된다.
-setTimeout(() => console.log("Hello!"));
-```
-
-setTimeout 함수가 반환한 타이머 id를 clearTimeout 함수의 인수로 전달하여 타이머를 취소할 수 있다.
-
-```js
-const timerId = setTimeout(() => console.log("Hi!"), 1000);
-console.log(timeId);
-
-clearTimeout(timerId);
-```
-
-<b>② setInterval/ clearInterval</b>
-
-setInterval 함수는 두 번째 인수로 전달받은 시간(ms, 1/1000초)으로 반복 동작하는 타이머를 생성한다.
-
-<details>
-
-<br/>
-
-```js
-const timeoutdId = setInterval(func|code[, delay, param1, param2, ...]);
-
-```
-
-</details>
-
-setInterval의 첫 번째 인수인 콜백 함수는 두 번째 인수로 전달받은 시간이 경과할 때마다 반복 실행되도록 호출 스케줄링된다.
-
-```js
-let count = 1;
-
-const timeoutId = setInterval(() => {
-  console.log(count); // 1 2 3 4 5
-
-  if (count++ === 5) clearInterval(timeoutId);
-}, 1000);
-
-console.log("timeoutId: ", timeoutId);
-```
-
-<br/>
-
 ### 이벤트가 과도하게 호출되어 성능에 문제를 일으킬 경우에 할 수 있는 어떤 일을 통해 해결할 수 있나요?
-
-scroll, resize, mousemove 같은 이벤트는 짧은 시간 간격으로 연속해서 발생한다.
-
-이러한 이벤트에 바인딩한 이벤트 핸들러는 과도하게 호출되어 성능에 문제를 일으킬 수 있다.
-
-① 디바운스와 ② 쓰로틀은 짧은 시간 간격으로 연속해서 발생하는 이벤트를 그룹화해서 과도한 이벤트 핸들러의 호출을 방지하는 프로그래밍 기법이다.
-
-이렇게 ① 디바운스와 ② 쓰로틀을 사용하여 이벤트가 과도하게 호출되는 것을 막거나, 조절할 수 있다.
+- 디바운스와 쓰로틀을 이용하여 짧은 시간 간격으로 연속해서 발생하는 이벤트를 그룹화해서 과도한 이벤트 핸들러의 호출을 방지할 수 있습니다.
 
 ### 디바운스에 대해서 알고 있나요?
-
-디바운스(debounce)는 짧은 시간 간격으로 이벤트가 연속해서 발생하면 이벤트 핸들러를 호출(call)하지 않다가 **일정 시간이 경과된 이후에 이벤트 핸들러가 한 번만 호출되도록 한다.**
-
-즉 디바운스는 **짧은 시간 간격으로 발생하는 이벤트를 그룹화해서 마지막에 한 번만 이벤트 핸들러가 호출되도록 한다.**
-
-텍스트 입력 필드에서 input 이벤트가 짧은 시간 간격으로 연속해서 발생하는 경우, 디바운스를 통해 Ajax와 같은 요청의 빈도를 줄여 서버에 부하를 줄일 수 있다.
-
-<details>
-
-```html
-<!DOCTYPE html>
-<html>
-  <body>
-    <input type="text" />
-    <div class="msg"></div>
-    <script>
-      const $input = document.querySelector("input");
-      const $msg = document.querySelector(".msg");
-
-      const debounce = (callback, delay) => {
-        let timerId;
-        // debounce 함수는 timerId를 기억하는 클로저를 반환한다.
-        return (event) => {
-          // delay가 경과하기 이전에 이벤트가 발생하면 이전 타이머를 취소하고
-          // 새로운 타이머를 재설정한다.
-          // 따라서 delay보다 짧은 간격으로 이벤트가 발생하면 callback은 호출되지 않는다.
-          if (timerId) clearTimeout(timerId);
-          timerId = setTimeout(callback, delay, event);
-        };
-      };
-
-      // debounce 함수가 반환하는 클로저가 이벤트 핸들러로 등록된다.
-      // 300ms보다 짧은 간격으로 input 이벤트가 발생하면 debounce 함수의 콜백 함수는
-      // 호출되지 않다가 300ms 동안 input 이벤트가 더 이상 발생하면 한 번만 호출된다.
-      $input.oninput = debounce((e) => {
-        $msg.textContent = e.target.value;
-      }, 300);
-    </script>
-  </body>
-</html>
-```
-
-### result 💻
-
-<img src="./images/debounce2.gif" alt="debounce">
-
-검색 창에서 매 클릭 이벤트 (e.target.value) 마다 ajax 요청을 보내는 것보다 디바운스를 통해 일정 기간을 바탕으로 마지막 이벤트에 대한 ajax 요청을 보내는 것이 서버의 부하를 줄이는 데 더욱 효율적일 것이다.
-
-</details>
+- 디바운스는 짧은 시간 간격으로 발생하는 이벤트를 그룹화해서 마지막에 한 번만 이벤트 핸들러가 호출되도록 합니다.
 
 ### 쓰로틀에 대해서 알고 있나요?
-
-쓰로틀(throttle)은 짧은 시간 간격으로 이벤트가 연속해서 발생하더라도 일정 시간 간격으로 이벤트 핸들러가 최대 한 번만 호출되도록 한다.
-
-쓰로틀은 짧은 시간 간격으로 연속해서 발생하는 이벤트를 그룹화해서 일정 시간 단위로 이벤트 핸들러가 호출되도록 호출 주기를 만든다.
-
-scroll 이벤트는 사용자가 스크롤할 때 짧은 시간 간격으로 연속해서 발생한다
-
-이처럼 짧은 시간 간격으로 연속해서 발생하는 이벤트의 과도한 이벤트 핸들러의 호출을 방지하기 위해 throttle 함수를 통해 호출 주기를 만든다
-
-쓰로틀은 scroll 이벤트 처리나 무한 스크롤 UI 구현 등에 유용하게 사용된다
-
-<details>
-
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <style>
-      .container {
-        width: 300px;
-        height: 300px;
-        background-color: rebeccapurple;
-        overflow: scroll;
-      }
-
-      .content {
-        width: 300px;
-        height: 1000vh;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="content"></div>
-    </div>
-    <div>
-      일반 이벤트 핸들러가 scroll 이벤트를 처리한 횟수:
-      <span class="normal-count">0</span>
-    </div>
-    <div>
-      쓰로틀 이벤트 핸들러가 scroll 이벤트를 처리한 횟수:
-      <span class="throttle-count">0</span>
-    </div>
-
-    <script>
-      const $container = document.querySelector(".container");
-      const $normalCount = document.querySelector(".normal-count");
-      const $throttleCount = document.querySelector(".throttle-count");
-
-      const throttle = (callback, delay) => {
-        let timerId;
-        // throttle 함수는 timerId를 기억하는 클로저를 반환한다.
-        return (event) => {
-          // delay가 경과하기 이전에 이벤트가 발생하면 아무것도 하지 않다가
-          // delay가 경과했을 때 이벤트가 발생하면 새로운 타이머를 재설정한다.
-          // 따라서 delay 간격으로 callback이 호출된다.
-          if (timerId) return;
-          timerId = setTimeout(
-            () => {
-              callback(event);
-              timerId = null;
-            },
-            delay,
-            event
-          );
-        };
-      };
-
-      let normalCount = 0;
-      $container.addEventListener("scroll", () => {
-        $normalCount.textContent = ++normalCount;
-      });
-
-      let throttleCount = 0;
-      // throttle 함수가 반환하는 클로저가 이벤트 핸들러로 등록된다.
-      $container.addEventListener(
-        "scroll",
-        throttle(() => {
-          $throttleCount.textContent = ++throttleCount;
-        }, 1000)
-      );
-    </script>
-  </body>
-</html>
-```
-
-### result 💻
-
-<img src="./images/throttle2.gif" alt="throttle">
-
-</details>
+- 쓰로틀(throttle)은 짧은 시간 간격으로 이벤트가 연속해서 발생하더라도 일정 시간 간격으로 이벤트 핸들러가 최대 한 번만 호출되도록 합니다.
 
 ## 비동기 프로그래밍
 
 ### 동기와 비동기의 차이점에 대해서 설명해줄 수 있나요?
-
-<details>
-
-자바스크립트 엔진은 기본적으로 함수를 호출하면 함수 코드가 평가되어 함수 실행 컨텍스트가 생성된다.
-
-이때 생성된 함수 실행 컨텍스트는 실행 컨텍스트 스택(콜 스택이라고도 부름)에 푸시되고 함수 코드가 실행된다.
-
-함수 코드의 실행이 종료되면 함수 실행 컨텍스트는 실행 컨텍스트 스택에서 팝되어 제거된다
-
-```js
-const x = 1;
-
-function foo() {
-  const y = 2;
-
-  function bar() {
-    const z = 3;
-    console.log(x + y + z);
-  }
-  bar();
-}
-
-foo(); // 6
-```
-
-<img src="./images/27_2.jpg" alt="실행 컨텍스트 스택 구조">
-
-함수가 실행되려면 ① 함수 코드 평가 과정에서 생성된 함수 실행 컨텍스트가 실행 컨텍스트 스택에 푸시되어야 한다.
-
-다시 말해, **실행 컨텍스트 스택에 함수 실행 컨텍스트가 푸시되는 것은 바로 함수 실행의 시작을 의미한다.**
-
-함수가 호출된 순서대로 순차적으로 실행되는 이유는 **함수가 호출된 순서대로 함수 실행 컨텍스트가 실행 컨텍스트 스택에 푸시되기 때문이다.**
-
-이처럼 **함수의 실행 순서는 실행 컨텍스트 스택이 관리한다.**
-
-#### 스택구조
-
-<img src="./images/39_1.jpg" alt="스택 구조">
-
-자바스크립트 엔진은 단 하나의 실행 컨텍스트 스택 구조를 갖는다.
-
-이는 함수를 실행할 수 있는 창구가 단 하나이며, 동시에 2개 이상의 함수를 실행할 수 없다는 것을 의미한다.
-
-실행 컨텍스트의 최상위 요소인 '실행 중인 실행 컨텍스트'를 제외한 모든 실행 컨텍스트는 모두 실행 대기 중인 태스크들이다.
-
-대기 중인 태스크들은 현재 실행 중인 실행 컨텍스트가 팝(pop)되어 실행 컨택스트 스택에서 제거되면, 비로소 실행되기 시작한다.
-
-#### 태스크
-
-<img src="./images/39_5.png" alt="태스크">
-
-**자바스크립트 엔진은 한 번에 하나의 태스크(작업, 일)만 실행할 수 있는 싱글 스레드 방식으로 동작한다.**
-
-싱글 스레드 방식은 한 번에 하나의 태스크만 실행할 수 있기 때문에 처리에 시간이 걸리는 태스크를 실행하는 경우 블로킹(작업중단)이 발생한다.
-
-#### 동기 코드 예시
-
-```js
-function sleep(func, delay) {
-  const delayUntil = Date.now() + delay;
-
-  // 현재 시간(Date.now())에 delay를 더한 delayUntil이 현재 시간보다 작으면 계속 반복한다.
-  while (Date.now() < delayUntil);
-  // 일정 시간(delay)이 경과한 이후에 콜백 함수(func)를 호출한다.
-  func();
-}
-
-function foo() {
-  console.log("foo");
-}
-
-function bar() {
-  console.log("bar");
-}
-
-sleep(foo, 3000);
-bar();
-```
-
-<img src="./images/sleep.gif" alt="동기함수 sleep">
-
-이처럼 **현재 실행 중인 태스크가 종료될 때까지 다음에 실행될 태스크가 대기하는 방식을 동기(synchronous) 처리 방식이라고 한다.**
-
-동기 처리 방식은 태스크를 순서대로 하나씩 처리하므로 실행 순서가 보장된다는 장점이 있지만, 앞선 태스크가 종료할 때까지 이후 태스크들이 블로킹되는 단점이 있다.
-
-<img src="./images/39_3.jpg" alt="동기처리">
-
-#### 비동기 코드 예시
-
-```js
-function foo() {
-  console.log("foo");
-}
-
-function bar() {
-  console.log("bar");
-}
-
-// 타이머 함수 setTimeout은 일정 시간이 경과한 이후에 콜백 함수 foo를 호출한다.
-// 타이머 함수 setTimeout은 bar 함수를 블로킹하지 않는다.
-setTimeout(foo, 3 * 1000);
-bar();
-```
-
-<img src="./images/nonSleep.gif" alt="비동기 함수 setTimeout">
-
-setTimeout 함수는 앞서 살펴본 sleep 함수와 유사하게 일정 시간이 경과한 이후에 콜백 함수를 호출하지만 setTimeout 함수 이후의 태스크(여기서는 bar)를 블로킹하지 않고 곧바로 실행한다.
-
-이처럼 **현재 실행 중인 태스크가 종료되지 않은 상태라 해도 다음 태스크를 곧바로 실행하는 방식을 비동기(asynchronous) 처리라고 한다.**
-
-<img src="./images/39_4.jpg" alt="비동기처리">
-
-비동기 처리 방식은 현재 실행 중인 태스크가 종료되지 않은 상태라 해도 다음 태스크를 곧바로 실행하므로 **블로킹이 발생하지 않는다는 장점이 있다.**
-
-하지만 동시에 **태스크의 실행 순서가 보장되지 않는 단점이 있다.**
-
-</details>
-
-#### 한줄 요약
-
-1. 현재 실행 중인 태스크가 **종료될 때까지 다음에 실행될 태스크가 대기하는 방식** 을 동기(synchronous) 처리 방식이라고 하며
-2. 현재 실행 중인 태스크가 **종료되지 않은 상태라 해도 다음 태스크를 곧바로 실행하는 방식** 을 비동기(asynchronous) 처리라고 한다.
-3. 대표적으로 타이머 함수인 **① setTimeout/ setInterval ② HTTP 요청 ③ 이벤트 핸들러** 는 비동기 처리 방식으로 동작한다.
+- 현재 실행 중인 태스크가 **종료될 때까지 다음에 실행될 태스크가 대기하는 방식** 을 동기(synchronous) 처리 방식이라고 하며 현재 실행 중인 태스크가 **종료되지 않은 상태라 해도 다음 태스크를 곧바로 실행하는 방식** 을 비동기(asynchronous) 처리라고 한다.
 
 <br/>
 
 ### 이벤트 루프와 태스크 큐에 대해서 알고 있나요?
-
-자바스크립트는 싱글 스레드로 동작하기 때문에 한 번에 하나의 태스크만 처리할 수 있다 하지만 브라우저가 동작하는 것을 살펴보면 많은 태스크가 동시에 처리되는 것처럼 느껴진다
-
-**예를 들어, HTML 요소가 애니메이션 효과를 통해 움직이면서 이벤트를 처리하기도 하고, HTTP 요청을 통해 서버로부터 데이터를 가지고 오면서 렌더링하기도 한다. 이처럼 자바스크립트의 동시성을 지원하는 것이 바로 이벤트 루프(event loop)다.**
-
-이벤트 루프는 브라우저에 내장되어 있는 기능 중 하나다. 브라우저 환경을 그림으로 표현하면 다음과 같다.
-
-<img src="./images/39_6.jpg" alt="브라우저의 환경">
-
-<details>
-
-구글의 v8 자바스크립트 엔진을 비롯한 대부분의 자바스크립트 엔진은 크게 2개의 영역으로 구분할 수 있다.
-
-**① 콜 스택 (call stack)**
-
-- 소스코드(전역 코드 및 함수 코드 등) 평가 과정에서 생성된 실행 컨텍스트가 추가되고 제거되는 스택 자료구조인 실행 컨텍스트 스택이 바로 콜 스택이다.
-
-- 함수를 호출하면 함수 실행 컨텍스트가 순차적으로 콜 스택에 푸시되어 순차적으로 실행된다. 자바스크립트 엔진은 단 하나의 콜 스택을 사용하기 때문에 최상위 실행 컨텍스트(실행 중인 실행 컨텍스트)가 종료되어 콜 스택에서 제거되기 전까지는 다른 어떤 태스크도 실행되지 않는다.
-
-**②힙 (heap)**
-
-- 힙은 객체가 저장되는 메모리 공간이다. 콜 스택의 요소인 실행 컨텍스트는 힙에 저장된 객체를 참조한다.
-
-- 메모리에 값을 저장하려면 먼저 값을 저장할 메모리 공간의 크기를 결정해야 한다. 객체는 원시 값과는 달리 크기가 정해져 있지 않으므로 할당해야 할 메모리 공간의 크기를 런타임에 결정(동적 할당)해야 한다. 따라서 객체가 저장되는 메모리 공간인 힙은 구조화되어 있지 않다는 특징이 있다.
-
-이처럼 콜 스택과 힙으로 구성되어 있는 자바스크립트 엔진은 단순히 태스크가 요청되면 콜 스택을 통해 요청된 작업을 순차적으로 실행할 뿐이다. 비동기 처리에서 ① 소스코드의 평가와 ② 실행을 제외한 모든 처리는 자바스크립트 엔진을 구동하는 환경인 브라우저 또는 Node.js가 담당한다.
-
-예를 들어,
-
-① 비동기 방식으로 동작하는 setTimeout의 콜백 함수의 평가와 실행은 자바스크립트 엔진이 담당하지만
-
-② 호출 스케줄링을 위한 타이머 설정과 콜백 함수의 등록은 브라우저 또는 Node.js가 담당한다
-
-이를 위해 브라우저 환경은 태스크 큐와 이벤트 루프를 제공한다
-
-**③ 태스크 큐 (task queue/event queue/callback queue)**
-
-- setTimeout이나 setInterval과 같은 비동기 함수의 콜백 함수 또는 이벤트 핸들러가 일시적으로 보관되는 영역이다
-- 태스크 큐와는 별도로 프로미스 후속 처리 메서드의 콜백 함수가 일시적으로 보관되는 마이크로태스크 큐도 존재한다
-
-#### 큐 (queue)
-
-- 스택 자료구조와 달리 선입선출(먼저 들어온 것이 먼저 나가는) 형식을 띈다
-- F.I.F.O(First In First Out) 라고도 부른다
-
-<img width="500" src="./images/39_2.jpg" alt="큐 자료구조">
-
-**④ 이벤트 루프 (event loop)**
-
-- 이벤트 루프는 콜 스택에 현재 실행 중인 실행 컨텍스트가 있는지, 그리고 태스크 큐에 대기 중인 함수(콜백 함수, 이벤트 핸들러 등)가 있는지 반복해서 확인한다
-- 만약 콜 스택이 비어 있고 태스크 큐에 대기 중인 함수가 있다면 이벤트 루프는 순차적(FIFO)으로 태스크 큐에 대기 중인 함수를 콜 스택으로 이동시킨다
-- 이때 콜 스택으로 이동한 함수는 실행된다. 즉, 태스크 큐에 일시 보관된 함수들을 비동기 처리 방식으로 동작한다
-
-</details>
+- 예를 들어, HTML 요소가 애니메이션 효과를 통해 움직이면서 이벤트를 처리하기도 하고, HTTP 요청을 통해 서버로부터 데이터를 가지고 오면서 렌더링하기도 한다. 이처럼 자바스크립트의 동시성을 지원하는 것이 바로 이벤트 루프(event loop)다.
 
 ### 다음과 같은 코드에서 이벤트 루프와 태스크 큐가 어떻게 동작하는지 설명해볼 수 있나요?
 
@@ -2667,65 +1804,15 @@ foo
 <br/>
 
 ### 마이크로태스크 큐에 대해서 알고 있나요?
-
-**마이크로태스크 큐** 는 **태스크큐** 와 별도의 큐로 후속 처리 메서드의 콜백 함수가 일시 저장된다.
-
-그 외의 비동기 함수 **① setTimeout/ setInterval ② HTTP 요청 ③ 이벤트 핸들러** 의 콜백 함수나 이벤트 핸들러는 태스크 큐에 일시 저장된다.
-
-콜백 함수나 이벤트 핸들러를 일시 저장한다는 점에서 태스크 큐와 동일하지만 마이크로태스크 큐는 태스크 큐보다 우선순위가 높다.
-
-```js
-setTimeout(() => console.log(1), 0);
-
-Promise.resolve()
-  .then(() => console.log(2))
-  .then(() => console.log(3));
-```
-
-프로미스의 후속 처리 메서드(then, catch, finally)도 비동기적으로 동작하므로 1 > 2 > 3 의 순으로 출력될 것처럼 보이지만 2 > 3 > 1 순으로 출력된다.
-
-프로미스의 후속 처리 메서드의 콜백 함수는 **태스크 큐** 가 아니라 **마이크로태스크 큐** 에 저장되기 때문이다.
-
-<details>
-<summary>gif로 이벤트 흐름 파악하기</summary>
-
-<br/>
-
-[출처: JavaScript Visualized: Promises](https://dev.to/lydiahallie/javascript-visualized-promises-async-await-5gke)
-
-<img src="./images/micro1.gif" alt="마이크로태스크큐">
-
-<img src="./images/micro2.gif" alt="마이크로태스크큐">
-
-<img src="./images/micro3.gif" alt="마이크로태스크큐">
-
-<img src="./images/micro4.gif" alt="마이크로태스크큐">
-
-<img src="./images/micro5.gif" alt="마이크로태스크큐">
-
-</details>
+- **마이크로태스크 큐** 는 **태스크큐** 와 별도의 큐로 후속 처리 메서드의 콜백 함수가 일시 저장되며, 태스크 큐보다 우선순위가 높다.
 
 ### 태스크 큐와 마이크로태스크 큐 중 어떤 것이 먼저 실행되나요?
-
-마이크로태스크 큐는 태스크 큐보다 우선순위가 높다.
-
-따라서 이벤트 루프에서 마이크로태스크 큐에 쌓인 태스크를 먼저 콜 스택에 올려준 뒤, 태스크 큐에 잔여 태스크를 콜 스택에 올린다
-
+- 마이크로태스크 큐는 태스크 큐보다 우선순위가 높다.
+- 
 ## Ajax
 
 ### Ajax가 뭔가요 어떤 것을 담당하고 있죠?
-
-Ajax(Asynchronous JavaScript and XML)란 **자바스크립트를 사용하여 ① 브라우저가 ② 서버에게 비동기 방식으로 데이터를 요청하고, 서버가 응답한 데이터를 수신하여 웹페이지를 동적으로 갱신하는 프로그래밍 방식** 을 말한다.
-
-Ajax는 브라우저에서 제공하는 **호스트 객체 Web API인 XMLHttpRequest 객체를 기반으로 동작한다.**
-
-XMLHttpRequest는 HTTP 비동기 통신을 위한 메서드와 프로퍼티를 제공한다.
-
-이전의 웹 페이지는 html 태그로 시작해서 html 태그로 끝나는 **완전한 HTML을 서버로부터 전송받아 웹 페이지 전체를 처음부터 다시 렌더링하는 방식으로 동작했다.**
-
-Ajax의 등장으로 서버로부터 **웹페이지의 변경에 필요한 데이터만 비동기 방식으로 전송받아 웹페이지를 변경할 필요가 없는 부분까지 다시 렌더링하지 않고, 변경할 필요가 있는 부분만 한정적으로 렌더링하는 방식이 가능해졌다.**
-
-<br/>
+- Ajax(Asynchronous JavaScript and XML)란 **자바스크립트를 사용하여 ① 브라우저가 ② 서버에게 비동기 방식으로 데이터를 요청하고, 서버가 응답한 데이터를 수신하여 웹페이지를 동적으로 갱신하는 프로그래밍 방식** 을 말하며, 웹페이지에서 변경할 필요가 있는 부분만 한정적으로 렌더링하는 방식이 가능합니다.
 
 ### Ajax를 사용하면 기존 방식과 어떤 차이가 있을까요?
 
@@ -2738,297 +1825,32 @@ Ajax의 등장으로 서버로부터 **웹페이지의 변경에 필요한 데�
 <br/>
 
 ### JSON 이 뭔가요?
-
-JSON은 JavaScript Object Notation의 약자입니다.
-
-JSON은 클라이언트와 서버 간의 HTTP 통신을 위한 텍스트 데이터 포맷입니다.
-
-자바스크립트에 종속되지 않는 언어 독립형 데이터 포맷으로, 대부분의 프로그래밍 언어에서 사용할 수 있습니다.
-
-객체 리터럴과 유사하게 키와 값으로 구성된 순수한 텍스트입니다
-
-```
-{
-  "name": "Lee",
-  "age": 20,
-  "alive": true,
-  "hobby": ["traveling", "tennis"]
-}
-```
+- JSON은 클라이언트와 서버 간의 HTTP 통신을 위한 텍스트 데이터 포맷입니다.
 
 ### JSON이 제공하는 정적 프로토타입 메서드에 대해 몇가지 말해볼 수 있나요?
-
-1. JSON.stringify()
-
-- JSON.stringify 메서드는 ① 객체를 ② JSON 포맷의 문자열로 변환한다
-- 클라이언트가 서버로 객체를 전송하려면 객체를 문자열화해야 하는데 이를 직렬화(serializing)라 한다
-
-2. JSON.parse()
-
-- JSON.parse 메서드는 ① JSON 포맷의 문자열을 ② 객체로 변환한다
-- 서버로부터 클라이언트에게 전송된 JSON 데이터는 문자열이다
-- 이 문자열을 객체로 사용하려면 JSON 포맷의 문자열을 객체화해야 하는데 이를 역직렬화(deserializing)라 한다
+- 객체를 JSON 포맷의 문자열로 변환하는 JSON.stringify()와 JSON 포맷의 문자열을 객체로 변환하는 JSON.parse()가 있습니다.
 
 ### Ajax로 HTTP 요청을 보내기 위해서는 어떤 방법을 사용할 수 있나요?
-
-1. [XMLHttpRequest](https://github.com/junh0328/upgrade_javascript/blob/master/DEEPDIVE/readme7.md#433-xmlhttprequest)
-
-<details>
-
-<br/>
-
-브라우저는 주소창이나 HTML의 form 태그 또는 a 태그를 통해 HTTP 요청 전송 기능을 기본 제공합니다
-
-자바스크립트를 사용하여 HTTP 요청을 전송하려면 **XMLHttpRequest** 객체를 사용합니다
-
-Web API인 XMLHttpRequest 객체는 ① HTTP 요청 전송과 ② HTTP 응답 수신을 위한 다양한 메서드와 프로퍼티를 제공합니다
-
-#### HTTP GET 요청 전송
-
-```js
-// XMLHttpRequest 객체 생성
-const xhr = new XMLHttpRequest();
-
-// HTTP 요청 초기화
-xhr.open("GET", "/users");
-
-// HTTP 요청 헤더 설정
-// 클라이언트가 서버로 전송할 데이터의 MIME 타입 지정: json
-xhr.setRequestHeader("content-type", "application/json");
-
-// HTTP 요청 전송
-xhr.send();
-```
-
-#### HTTP POST 요청 전송
-
-```js
-// XMLHttpRequest 객체 생성
-const xhr = new XMLHttpRequest();
-
-// HTTP 요청 초기화
-xhr.open("POST", "/users");
-
-// HTTP 요청 헤더 설정
-// 클라이언트가 서버로 전송할 데이터의 MIME 타입 지정: json
-xhr.setRequestHeader("content-type", "application/json");
-
-// HTTP 요청 전송
-xhr.send(JSON.stringify({ id: 1, content: "HTML", completed: false }));
-```
-
-#### HTTP 응답 처리
-
-```js
-// XMLHttpRequest 객체 생성
-const xhr = new XMLHttpRequest();
-
-// HTTP 요청 초기화
-// https://jsonplaceholder.typicode.com은 Fake REST API를 제공하는 서비스다.
-xhr.open("GET", "https://jsonplaceholder.typicode.com/todos/1");
-
-// HTTP 요청 전송
-xhr.send();
-
-// load 이벤트는 HTTP 요청이 성공적으로 완료된 경우 발생한다.
-xhr.onload = () => {
-  if (xhr.status === 200) {
-    console.log(JSON.parse(xhr.response));
-    // {userId: 1, id: 1, title: "delectus aut autem", completed: false}
-  } else {
-    console.error("Error", xhr.status, xhr.statusText);
-  }
-};
-```
-
-</details>
-
-2. [Fetch](https://github.com/junh0328/upgrade_javascript/blob/master/DEEPDIVE/readme7.md#458-fetch)
-
-<details>
-
-<br/>
-
-fetch 함수는 **XMLHttpRequest 객체와 마찬가지로 HTTP 요청 전송 기능을 제공하는 클라이언트 사이드 Web API다.**
-
-fetch 함수는 **XMLHttpRequest 객체보다 사용법이 간단하고 프로미스를 지원하기 때문에 비동기 처리를 위한 콜백 패턴의 단점에서 자유롭다.**
-
-fetch 함수는 비교적 최근에 추가된 Web API로서 인터넷 익스플로러를 제외한 대부분의 모던 브라우저에서 제공한다.
-
-fetch 함수에는 HTTP 요청을 전송할 URL과 HTTP 요청 메서드, HTTP 요청 헤더, 페이로드 등을 설정한 객체를 전달한다.
-
-```js
-const promise = fetch(url [, options])
-```
-
-fetch 함수는 HTTP 응답을 나타내는 Response 객체를 래핑한 Promise 객체를 반환한다.
-
-```js
-fetch("https://jsonplaceholder.typicode.com/todos/1").then((response) =>
-  console.log(response)
-);
-```
-
-#### Response 객체
-
-<img src="./images/41_5.png" alt="response object">
-
-Response.prototype에는 Response 객체에 포함되어 있는 HTTP 응답 몸체(response.body)를 위한 다양한 메서드를 제공한다.
-
-예를 들어, fetch 함수가 반환한 프로미스가 래핑하고 있는 MIME 타입이 application/json인 HTTP 응답 몸체를 취득하려면 Response.prototype.json 메서드를 사용한다.
-
-Response.prototype.json 메서드는 Response 객체에서 HTTP 응답 몸체를 역직렬화(deserialize)한다.
-
-```js
-fetch("https://jsonplaceholder.typicode.com/todos/1")
-  // response는 HTTP 응답을 나타내는 Response 객체이다.
-  // json 메서드를 사용하여 Response 객체에서 HTTP 응답 몸체를 취득하여 역직렬화한다.
-  .then((response) => response.json())
-  // json은 역직렬화된 HTTP 응답 몸체이다.
-  .then((json) => console.log(json));
-// {userId: 1, id: 1, title: "delectus aut autem", completed: false}
-```
-
-#### fetch로 CRUD 구현하기
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Document</title>
-  </head>
-  <body>
-    <pre></pre>
-    <script>
-      const render = (res) => {
-        console.log(res);
-        const result = JSON.stringify(res);
-        document.querySelector("pre").innerHTML = `<b>${result}</b>`;
-      };
-
-      const request = {
-        // get 메서드
-        get(url) {
-          return fetch(url);
-        },
-        // post 메서드
-        post(url, payload) {
-          return fetch(url, {
-            method: "POST",
-            headers: { "content-Type": "application/json" },
-            body: JSON.stringify(payload),
-          });
-        },
-        // patch 메서드
-        patch(url, payload) {
-          return fetch(url, {
-            method: "PATCH",
-            headers: { "content-Type": "application/json" },
-            body: JSON.stringify(payload),
-          });
-        },
-        // delete 메서드
-        delete(url) {
-          return fetch(url, { method: "DELETE" });
-        },
-      };
-
-      // get
-      request
-        .get("https://jsonplaceholder.typicode.com/todos/1")
-        .then((response) => response.json())
-        .then((todos) => render(todos))
-        .catch((err) => console.log(err));
-
-      // post
-      request
-        .post("https://jsonplaceholder.typicode.com/todos", {
-          userId: 1,
-          title: "JavaScript",
-          completed: false,
-        })
-        .then((response) => response.json())
-        .then((todos) => console.log(todos))
-        .catch((err) => console.log(err));
-
-      // patch
-      request
-        .patch("https://jsonplaceholder.typicode.com/todos/1", {
-          completed: true,
-        })
-        .then((response) => response.json())
-        .then((todos) => console.log(todos))
-        .catch((err) => console.log(err));
-
-      // delete
-      request
-        .delete("https://jsonplaceholder.typicode.com/todos/1")
-        .then((response) => response.json())
-        .then((todos) => console.log(todos))
-        .catch((err) => console.log(err));
-    </script>
-  </body>
-</html>
-```
-
-</details>
+- 자바스크립트를 사용하여 HTTP 요청을 전송하려면 **XMLHttpRequest** 객체를 사용합니다
 
 ### XMLHttpRequest와 fetch 메서드의 차이는 무엇이라고 생각하시나요?
-
-`fetch` 메서드 또한 `XMLHttpRequest` 처럼 Ajax 통신을 위해 사용됩니다.
-
-하지만 `fetch` 메서드는 **Promise**를 기반으로 구성되어 있어서 더 간편하게 사용할 수 있다는 차이점이 있습니다.
-
-Promise의 후속 처리 메서드 `.then() .catch() . finally()` 등을 사용하여 코드를 작성할 수 있습니다.
+- `fetch` 메서드 또한 `XMLHttpRequest` 처럼 Ajax 통신을 위해 사용됩니다. 하지만 `fetch` 메서드는 **Promise**를 기반으로 구성되어 있어서 더 간편하게 사용할 수 있다는 차이점이 있습니다.
 
 ## REST API
 
 ### REST API가 뭔가요?
-
-REST는 HTTP의 장점을 최대한 활용할 수 있는 아키텍처로서, HTTP 프로토콜을 의도에 맞게 디자인하도록 유도하고 있다.
-
-즉, REST는 **HTTP를 기반으로 클라이언트가 서버의 리소스에 접근하는 방식을 규정한 아키텍처고,** REST API는 **REST를 기반으로 서비스 API를 구현한 것을 의미한다.**
-
-**REST의 기본 원칙을 성실히 지킨 서비스 디자인을 'RESTful'이라고 표현한다.**
+- REST는 **HTTP를 기반으로 클라이언트가 서버의 리소스에 접근하는 방식을 규정한 아키텍처고,** REST API는 **REST를 기반으로 서비스 API를 구현한 것을 의미한다.**
 
 <br/>
 
 ### REST API의 구성은 어떤 것이 있나요?
-
-REST API는 **① 자원(resource), ② 행위 (verb), ③ 표현 (representations)** 의 3가지 요소로 구성된다.
-
-| 구성 요소             | 내용                           | 표현 방법        |
-| :-------------------- | :----------------------------- | :--------------- |
-| 자원(resource)        | 자원                           | URI(엔드 포인트) |
-| 행위(verb)            | 자원에 대한 행위               | HTTP 요청 메서드 |
-| 표현(representations) | 자원에 대한 행위의 구체적 내용 | 페이로드         |
+- REST API는 **① 자원(resource), ② 행위 (verb), ③ 표현 (representations)** 의 3가지 요소로 구성된다.
 
 <br/>
 
 ### REST API를 설계하는데 중요한 것이 있을까요?
-
-REST에서 가장 중요한 기본적인 원칙은 두 가지다.
-
-**① URI는 리소스를 표현하는데 집중해야 한다**
-
-**② 행위에 대한 정의는 HTTP 요청 메서드를 통해 해야 한다**
-
-위 두 규칙이 RESTful API를 설계하는 중심 규칙이다.
-
-URI는 리소스를 표현해야 한다
-URI는 리소스를 표현하는 데 중점을 두어야 한다. 리소스를 식별할 수 있는 이름은 ① 동사보다는 ② 명사를 사용한다.
-
-따라서 리소스 이름에 get 같은 행위에 대한 표현이 들어가서는 안 된다.
-
-```
-# bad
-GET /getTodos/1
-GET /todos/show/1
-
-# good
-GET /todos/1
-```
+- ① URI는 리소스를 표현하는데 집중해야 한다.
+- ② 행위에 대한 정의는 HTTP 요청 메서드를 통해 해야 한다.
 
 <br/>
 
@@ -3042,265 +1864,38 @@ GET /todos/1
 | PATCH            | modify         | 리소스 일부 수정      | o        |
 | DELETE           | delete         | 모든/특정 리소스 삭제 | x        |
 
-<details>
-<summary>CRUD 예제 코드 보기</summary>
-
-#### GET 요청 (전체)
-
-```html
-<!DOCTYPE html>
-<html>
-  <body>
-    <pre></pre>
-    <script>
-      const xhr = new XMLHttpRequest();
-
-      xhr.open("GET", "/todos");
-
-      xhr.send();
-
-      xhr.onload = () => {
-        if (xhr.status === 200) {
-          document.querySelector("pre").innerHTML = xhr.response;
-        } else {
-          console.error("Error", xhr.status, xhr.statusText);
-        }
-      };
-    </script>
-  </body>
-</html>
-```
-
-#### GET 요청 (일부)
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Document</title>
-  </head>
-  <body>
-    <pre></pre>
-    <script>
-      const xhr = new XMLHttpRequest();
-
-      xhr.open("GET", "/todos/1");
-
-      xhr.send();
-
-      xhr.onload = () => {
-        if (xhr.status === 200) {
-          const result = (document.querySelector(
-            "pre"
-          ).innerHTML = `<h1>${xhr.response}</h1>`);
-        } else {
-          console.error("Error", xhr.status, xhr.statusText);
-        }
-      };
-    </script>
-  </body>
-</html>
-```
-
-#### POST 요청
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Document</title>
-  </head>
-  <body>
-    <pre></pre>
-    <script>
-      const xhr = new XMLHttpRequest();
-      xhr.open("POST", "/todos");
-      xhr.setRequestHeader("content-type", "application/json");
-
-      // 해당 액션이 db.json에 생성된 후에 다시 한번 해당 url로 접근한다면
-      // Error: Insert failed, duplicate id (유효하지 않은 id 값) 이라는 에러가 뜬다
-      xhr.send(JSON.stringify({ id: 4, content: "Angular", completed: false }));
-
-      xhr.onload = () => {
-        if (xhr.status === 200 || xhr.status === 201) {
-          document.querySelector("pre").innerHTML = xhr.response;
-        } else {
-          console.error("Error", xhr.status, xhr.statusText);
-        }
-      };
-    </script>
-  </body>
-</html>
-```
-
-#### PATCH 요청
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Document</title>
-  </head>
-  <body>
-    <pre></pre>
-    <script>
-      const xhr = new XMLHttpRequest();
-
-      xhr.open("PATCH", "/todos/4");
-      xhr.setRequestHeader("content-type", "application/json");
-
-      xhr.send(JSON.stringify({ completed: false }));
-
-      xhr.onload = () => {
-        if (xhr.status === 200) {
-          document.querySelector("pre").innerHTML = xhr.response;
-        } else {
-          console.error("Error", xhr.status, xhr.statusText);
-        }
-      };
-    </script>
-  </body>
-</html>
-```
-
-#### DELETE 요청
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Document</title>
-  </head>
-  <body>
-    <pre></pre>
-    <script>
-      const xhr = new XMLHttpRequest();
-
-      xhr.open("DELETE", "/todos/4");
-
-      xhr.send();
-
-      xhr.onload = () => {
-        if (xhr.status === 200) {
-          document.querySelector("pre").innerHTML = xhr.response;
-        } else {
-          console.error("Error", xhr.status, xhr.statusText);
-        }
-      };
-    </script>
-  </body>
-</html>
-```
-
-</details>
-
 <br/>
 
 ### HTTP 상태 코드를 아는대로 말해주세요
+- `2XX`
+  - 200 : 요청이 성공적으로 보내졌음을 의미         
+  - 201 : 요청이 성공적이였으며 새로운 리소스가 생성되었음을 의미
+- `4XX`
+  - 400 : Bad Request 잘못된 문법으로 인하여 서버가 요청을 이해할 수 없음을 의미
+  - 401 : Unathorized 비인증(Unathorize)된 요청임을 의미                         
+  - 403 : Forbidden 콘텐츠에 접근할 권리를 가지고 있지 않음을 의미
+  - 404 : Not Found 요청받은 리소스를 찾을 수 없음을 의미                      
 
-[Link MDN HTTP Status 🔥](https://developer.mozilla.org/ko/docs/Web/HTTP/Status)
-
-`2XX`
-
-| 상태 코드 | 코드 명 | 의미                                                    |
-| :-------: | :-----: | :------------------------------------------------------ |
-|    200    |   OK    | 요청이 성공적으로 보내졌음을 의미                       |
-|    201    | Created | 요청이 성공적이였으며 새로운 리소스가 생성되었음을 의미 |
-
-`4XX`
-
-| 상태 코드 |   코드 명   | 의미                                                       |
-| :-------: | :---------: | :--------------------------------------------------------- |
-|    400    | Bad Request | 잘못된 문법으로 인하여 서버가 요청을 이해할 수 없음을 의미 |
-|    401    | Unathorized | 비인증(Unathorize)된 요청임을 의미                         |
-|    403    |  Forbidden  | 콘텐츠에 접근할 권리를 가지고 있지 않음을 의미             |
-|    404    |  Not Found  | 요청받은 리소스를 찾을 수 없음을 의미                      |
-
-`5XX`
-
-| 상태 코드 |        코드 명        | 의미                                  |
-| :-------: | :-------------------: | :------------------------------------ |
-|    500    | Internal Server Error | 서버가 처리 방법을 모르는 상황을 의미 |
+- `5XX`
+  - 500 : Internal Server Error 서버가 처리 방법을 모르는 상황을 의미
 
 ## Promise
 
 ### 콜백이란 뭐라고 생각하나요?
-
-자바스크립트에서 콜백 함수는 다른 함수의 매개변수로 함수를 전달하고, 어떠한 이벤트가 발생한 후 매개변수로 전달한 함수가 다시 호출되는 것을 의미합니다.
-
-어떤 일을 다른 객체에게 시키고, 그일이 끝나는 것을 기다리지 않고 끝나고 부를 때까지 다른 일을 하는 것을 말합니다.
-
-이 때문에 `동기`가 아닌 `비동기`적으로 처리되는 비동기 방식의 함수라고 할 수 있습니다.
+- 콜백 함수는 다른 함수의 매개변수로 함수를 전달하고, 어떠한 이벤트가 발생한 후 매개변수로 전달한 함수가 다시 호출되는 것을 의미하는 비동식 방식의 함수입니다.
 
 ### 프로미스가 뭔가요?
-
-자바스크립트에서는 비동기 처리를 위한 패턴중 하나로 콜백 함수를 사용합니다.
-
-전통적인 콜백 패턴은 일명 '콜백 헬'로 인해 가독성이 나쁘고 비동기 처리 중 발생한 에러의 처리가 곤란하며 여러 개의 비동기 처리를 한 번에 처리하는데 한계를 느꼈다.
-
-프로미스는 ES6에서 도입된, 콜백 함수의 문제점인 비동기 처리를 해결하기 위한 또 하나의 패턴입니다.
-
-```js
-// case 1 : 콜백 HELL 🔥
-
-get("/step1", (a) => {
-  get(`/step2/${a}`, (b) => {
-    get(`/step3/${b}`, (c) => {
-      get(`/step4/${c}`, (d) => {
-        console.log(d);
-      });
-    });
-  });
-});
-```
-
-<br/>
+- 프로미스는 ES6에서 도입된, 콜백 함수의 문제점인 여러 개의 비동기 처리를 해결하기 위한 또 하나의 패턴입니다.
 
 ### 프로미스 생성 방법
-
-Promise 생성자 함수를 new 연산자와 함께 호출하면 프로미스(Promise 객체)를 생성한다.
-
-ES6에서 도입된 Promise는 호스트 객체가 아닌 ECMAScript 사양에 정의된 표준 빌트인 객체다.
-
-Promise 생성자 함수는 비동기 처리를 수행할 콜백 함수를 인수로 전달받는데 이 콜백 함수는 resolve와 reject 함수를 인수로 전달받는다.
-
-```js
-const promise = new Promise((resolve, reject) => {
-  if (/* 비동기 처리 성공 */) {
-    resolve('result');
-  } else { /* 비동기 처리 실패 */
-    reject('failure reason');
-  }
-});
-```
-
-Promise 생성자 함수가 인수로 전달받은 콜백 함수 내부에서 비동기 처리를 수행한다. 이때 비동기 처리가 성공하면 resolve를, 실패하면 reject를 호출한다.
+- Promise 생성자 함수를 new 연산자와 함께 호출하면 프로미스(Promise 객체)를 생성한다.
 
 <br/>
 
 ### 프로미스의 상태를 나타내는 것은 어떤 것들이 있나요?
-
-프로미스는 다음과 같이 현재 비동기 처리가 어떻게 진행되고 있는지를 나타내는 상태(state) 정보를 갖는다.
-
-| 프로미스의 상태 정보 | 의미                                  | 상태 변경 조건                   |
-| :------------------- | :------------------------------------ | :------------------------------- |
-| pending              | 비동기 처리가 아직 수행되지 않은 상태 | 프로미스가 생성된 직후 기본 상태 |
-| fulfilled            | 비동기 처리가 수행된 상태(성공)       | resolve 함수 호출                |
-| reject               | 비동기 처리가 수행된 상태(실패)       | reject 함수 호출                 |
-
-생성된 직후의 프로미스는 기본적으로 pending 상태다. 이후 비동기 처리가 수행되면 비동기 처리 결과에 따라 다음과 같이 프로미스의 상태가 변경된다
-
-<img src="./images/42.png" alt="3단계">
-
-① fulfilled 또는 ② rejected인 상태를 **settled 상태라고 한다.** **settled 상태는 fulfilled 또는 rejected 상태와 상관없이 pending이 아닌 상태로 비동기 처리가 수행된 상태를 말한다.**
-
-프로미스는 🔥 **pending** 상태에서 fulfilled 또는 rejected 상태, 즉 🔥 **settled** 상태로 변화할 수 있다.
-
-하지만 일단 settled 상태가 되면 더는 다른 상태로 변화할 수 없다.
+- pending : 비동기 처리가 아직 수행되지 않은 상태, <상태 변경 조건> 프로미스가 생성된 직후 기본 상태
+- fulfilled : 비동기 처리가 수행된 상태(성공), <상태 변경 조건> resolve 함수 호출
+- reject : 비동기 처리가 수행된 상태(실패), <상태 변경 조건> reject 함수
 
 <br/>
 
@@ -3311,451 +1906,67 @@ Promise 생성자 함수가 인수로 전달받은 콜백 함수 내부에서 �
 - Promise.race
 - Promise.allSettled
 
-<details>
-
-**① Promise.resolve/ Promise.reject**
-
-Promise.resolve와 Promise.reject 정적 메서드는 이미 존재하는 값을 래핑하여 프로미스를 생성하기 위해 사용한다.
-
-```js
-// 정적 메서드 사용
-const resolvedPromise = Promise.resolve([1, 2, 3]);
-resolvedPromise.then(console.log); // [1, 2, 3]
-```
-
-위 예제는 다음 예제와 동일하게 동작한다
-
-```js
-// 생성자 함수를 통해 프로토타입 메서드 사용
-const resolvedPromise = new Promise((resolve) => resolve([1, 2, 3]));
-resolvedPromise.then(console.log); // [1, 2, 3]
-```
-
-**② Promise.all**
-
-Promise.all 메서드는 여러 개의 비동기 처리를 모두 병령처리할 때 사용한다.
-
-```js
-const requestData1 = () =>
-  new Promise((resolve) => setTimeout(() => resolve(1), 3000));
-const requestData2 = () =>
-  new Promise((resolve) => setTimeout(() => resolve(2), 2000));
-const requestData3 = () =>
-  new Promise((resolve) => setTimeout(() => resolve(3), 1000));
-
-// 세 개의 비동기 처리를 순차적으로 처리
-const res = [];
-requestData1()
-  .then((data) => {
-    res.push(data);
-    return requestData2();
-  })
-  .then((data) => {
-    res.push(data);
-    return requestData3();
-  })
-  .then((data) => {
-    res.push(data);
-    console.log(res); // [1, 2, 3] ⇒ 약 6초 소요
-  })
-  .catch(console.error);
-```
-
-위 예제는 세 개의 비동기 처리를 순차적으로 처리한다.(then 메서드를 통해)
-
-즉, 앞선 비동기 처리가 완료되면 다음 비동기 처리를 수행한다. 따라서 위 예제는 3 , 2 , 1 초를 다 더한 6초 이상이 소요된다.
-
-따라서 이런 상황에서 Promise.all 메서드를 사용한다면 병렬적으로 처리할 수 있다.
-
-```js
-const requestData1 = () =>
-  new Promise((resolve) => setTimeout(() => resolve(1), 3000));
-const requestData2 = () =>
-  new Promise((resolve) => setTimeout(() => resolve(2), 2000));
-const requestData3 = () =>
-  new Promise((resolve) => setTimeout(() => resolve(3), 1000));
-
-Promise.all([requestData1(), requestData2(), requestData3()])
-  .then(console.log) // [ 1, 2, 3 ] ⇒ 약 3초 소요
-  .catch(console.error);
-```
-
-Promise.all 메서드는 인수로 전달받은 배열의 모든 프로미스가 fulfilled 상태가 되면 종료한다. 따라서 Promise.all 메서드가 종료하는 데 걸리는 시간은 가장 늦게 fulfilled 상태가 되는 프로미스의 처리 시간보다 조금 더 길다. (3초보다 조금 더 소요된다.)
-
-프로미스의 처리 시간에 의해 총 처리 시간이 결정되지만, 순서는 코드의 처리 순서를 보장한다.
-
-첫 번째 프로미스가 가장 나중에 fulfilled 상태가 되어도 Promise.all 메서드는 첫 번째 프로미스가 resolve한 처리 결과부터 차례대로 배열에 저장해 그 배열을 resolve하는 새로운 프로미스를 반환한다.
-
-Promise.all 메서드는 모든 프로미스가 fulfilled 상태가 되면 모든 처리 결과를 배열에 저장해 새로운 프로미스를 반환하므로, 해당 처리중에 rejected가 발생될 경우 에러가 발생한다.
-
-fulfilled 상태가 되는 것을 기다리지 않고 즉시 종료한다
-
-**③ Promise.race**
-
-Promise.race 메서드는 Promise.all 메서드와 동일하게 프로미스를 요소로 갖는 배열 등의 이터러블을 인수로 전달받는다.
-
-하지만 Promise.race 메서드는 모든 프로미스가 fulfilled 상태가 되는 것을 기다리는 것이 아니라 가장 먼저 fulfilled 상태가 된 프로미스의 처리 결과를 resolve하는 새로운 프로미스를 반환한다.
-
-```js
-Promise.race([
-  new Promise((resolve) => setTimeout(() => resolve(1), 3000)), // 1
-  new Promise((resolve) => setTimeout(() => resolve(2), 2000)), // 2
-  new Promise((resolve) => setTimeout(() => resolve(3), 1000)), // 3
-])
-  .then(console.log) // 3
-  .catch(console.log);
-```
-
-**④ Promise.allSettled**
-
-Promise.allSettled 메서드는 프로미스를 요소로 갖는 배열 등의 이터러블을 인수로 전달받는다.
-
-그리고 이름과 알 수 있듯이 전달받은 프로미스가 모두 settled 상태(비동기 처리가 수행된 상태, fulfilled / rejected 상태)가 되면 처리 결과를 배열로 반환한다.
-
-```js
-Promise.allSettled([
-  new Promise((resolve) => setTimeout(() => resolve(1), 2000)),
-  new Promise((_, reject) =>
-    setTimeout(() => reject(new Error("Error!")), 1000)
-  ),
-]).then(console.log);
-/*
-[
-  {status: "fulfilled", value: 1},
-  {status: "rejected", reason: Error: Error! at <anonymous>:3:54}
-]
-*/
-```
-
-</details>
+<br/>
 
 ## 제너레이터와 async await
 
 ### `제너레이터란 뭔가요? 일반 함수와는 어떤 차이가 있죠?`
-
-ES6에서 도입된 제너레이터(generator)는 코드 블록의 실행을 일시 중지 (블로킹) 했다가 필요한 시점에 재개할 수 있는 특수한 함수다.
-
-제너레이터와 일반 함수의 차이는 다음과 같다.
-
-**① 제너레이터 함수는 함수 호출자에게 함수 실행의 제어권을 양도할 수 있다.**
-
-- 제너레이터는 함수 호출자가 함수 실행을 일시 중지시키거나 재개시킬 수 있다.
-- 이는 함수의 제어권을 함수가 독점하는 것이 아니라 함수 호출자에게 양도(yield)할 수 있다는 것을 의미한다.
-
-**② 제너레이터 함수는 함수 호출자와 함수의 상태를 주고받을 수 있다.**
-
-- 제너레이터 함수는 함수 호출자에게 상태를 전달할 수 있고 함수 호출자로부터 상태를 전달받을 수도 있다.
-
-**③ 제너레이터 함수를 호출하면 제너레이터 객체를 반환한다.**
-
-- 제너레이터 함수를 호출하면 함수 코드를 실행하는 것이 아니라 이터러블이면서 동시에 이터레이터인 제너레이터 객체를 반환한다.
+- ES6에서 도입된 제너레이터(generator)는 코드 블록의 실행을 일시 중지 (블로킹) 했다가 필요한 시점에 재개할 수 있는 특수한 함수다.
+- 일반함수와의 차이
+  - ① 제너레이터 함수는 함수 호출자에게 함수 실행의 제어권을 양도할 수 있다.
+  - ② 제너레이터 함수는 함수 호출자와 함수의 상태를 주고받을 수 있다.
+  - ③ 제너레이터 함수를 호출하면 제너레이터 객체를 반환한다.
 
 <br/>
 
 ### `제너레이터의 구조`
-
-제너레이터는 ① yield 키워드와 ② next 메서드를 통해 실행을 일시 중지했다가 필요한 시점에 다시 재개할 수 있다.
-
-일반 함수는 호출 이후 제어권을 해당 함수가 독점하지만, 제너레이터는 함수 호출자에게 제어권을 양도(yield)하여 필요한 시점에 함수 실행을 재개할 수 있다.
-
-next 메서드를 통해 제너레이터를 실행할 경우, 코드 블록 내에 yield 키워드 뒤에 오는 표현식의 평가 결과를 제너레이터 함수 호출자에게 리절트 객체형식으로 반환한다.
-
-```
-{ value : , done : }
-```
-
-<details>
-<summary>코드 보기 📌</summary>
-
-<br/>
-
-```js
-// 제너레이터 함수
-function* genFunc() {
-  yield 1;
-  yield 2;
-  yield 3;
-}
-
-// 제너레이터 함수를 호출하면 제너레이터 객체를 반환한다.
-// 이터러블이면서 동시에 이터레이터인 제너레이터 객체는 next 메서드를 갖는다.
-const generator = genFunc();
-
-console.log(generator.next()); // {value: 1, done: false}
-
-console.log(generator.next()); // {value: 2, done: false}
-
-console.log(generator.next()); // {value: 3, done: false}
-
-console.log(generator.next()); // {value: undefined, done: true}
-```
-
-</details>
+- 제너레이터는 ① yield 키워드와 ② next 메서드를 통해 실행을 일시 중지했다가 필요한 시점에 다시 재개할 수 있다.
 
 <br/>
 
 ### `async/await 가 뭔가요? 기존의 Promise와는 어떤 차이가 있죠?`
-
-[Link MDN: async function🔥](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/async_function)
-
-ES8에서는 제너레이터보다 간단하고 가독성 좋게 `비동기 처리를 동기 처리처럼 동작하도록 구현할 수 있는` async/await가 도입되었다.
-
-async/await는 `프로미스를 기반으로 동작`하기 때문에 **프로미스의 then/catch/finally 등의 후속 처리 메서드에 콜백 함수를 전달해서 비동기 처리 결과를 후속 처리할 필요 없이 마치 동기 처리처럼 프로미스를 사용할 수 있다.**
-
-🔥 **다시 말해, 프로미스의 후속 처리 메서드 없이 마치 동기 처리처럼 프로미스가 처리 결과를 반환하도록 구현할 수 있다.**
-
-<details>
-<summary>코드 보기 📌</summary>
-
-#### `async 함수`
-
-async 함수는 async 키워드를 사용해 정의하며 언제나 프로미스를 반환한다.
-
-async 함수가 명시적으로 프로미스를 반환하지 않더라도 async 함수는 암묵적으로 반환 값을 resolve하는 프로미스를 반환한다.
-
-#### `await 키워드`
-
-await 키워드는 프로미스가 **settled 상태(비동기 처리가 수행된 상태)** 가 될 때까지 대기하다가 settled 상태가 되면 프로미스가 resolve한 처리 결과를 반환한다.
-
-await 키워드는 반드시 프로미스 앞에서 사용해야 한다.
-
-```html
-<body>
-  <pre></pre>
-  <script>
-    // async 사용!
-    async function fetchTodo() {
-      const url = "https://jsonplaceholder.typicode.com/todos/1";
-
-      const response = await fetch(url);
-      const todo = await response.json();
-      console.log(todo);
-      const result = JSON.stringify(todo, null, 2);
-      document.querySelector("pre").innerHTML = result;
-      // {userId: 1, id: 1, title: 'delectus aut autem', completed: false}
-    }
-
-    fetchTodo();
-  </script>
-</body>
-```
-
-</details>
-
-async await로 구현할 경우 제너레이터의 성질을 갖기 때문에 항상 프로미스가 settled(이행된) 상태가 될 때까지 대기한다.
-
-따라서 모든 코드에 async await를 남발하는 것은 도움이 되지 않는다
-
-#### `async await 키워드를 사용하는 경우`
-
-```js
-async function foo() {
-  const a = await new Promise((resolve) => setTimeout(() => resolve(1), 3000));
-  const b = await new Promise((resolve) => setTimeout(() => resolve(2), 2000));
-  const c = await new Promise((resolve) => setTimeout(() => resolve(3), 1000));
-
-  console.log([a, b, c]); // [1, 2, 3]
-}
-
-foo(); // 약 6초 소요된다.
-```
-
-#### `프로미스의 정적 메서드 Promise.all을 사용하는 경우`
-
-3개의 비동기 처리는 서로 연관이 없이 개별적으로 수행되는 비동기처리 이므로 앞선 비동기 처리가 완료될 때까지 대기해서 순차적으로 처리할 필요가 없다.
-
-```js
-async function foo() {
-  const res = await Promise.all([
-    new Promise((resolve) => setTimeout(() => resolve(1), 3000)),
-    new Promise((resolve) => setTimeout(() => resolve(2), 2000)),
-    new Promise((resolve) => setTimeout(() => resolve(3), 1000)),
-  ]);
-
-  console.log(res); // [1, 2, 3]
-}
-
-foo(); // 약 3초 소요된다.
-```
+- `async/await`는 비동기 처리를 동기 처리처럼 동작하도록 구현할 수 있는 것입니다.
+- 프로미스의 후속 처리 메서드 없이 마치 동기 처리처럼 프로미스가 처리 결과를 반환하도록 구현할 수 있다.
 
 <br/>
 
 ### `Promise와 async/await의 차이점 한 줄 요약`
-
-**① 에러 핸들링**
-
-- Promise 를 활용할 시에는 .catch() 문을 통해 에러 핸들링을 해야 하지만,
-- async/await 은 try / catch를 통해 에러를 처리할 수 있다
-
-**② 코드 가독성**
-
-- Promise의 후속 처리 메서드인 .then() 의 hell의 가능성
+- Promise 를 활용할 시에는 .catch() 문을 통해 에러 핸들링을 해야 하지만, async/await 은 try / catch를 통해 에러를 처리할 수 있다
 - async/await 은 프로미스의 후속 처리 메서드 없이 마치 동기 처리처럼 프로미스가 처리 결과를 반환하도록 구현할 수 있기 때문에 코드 흐름을 이해 하기 쉽다.
 
 ## 에러
 
 ### `에러처리를 왜 해야 하나요?`
-
-에러가 발생하지 않는 코드를 작성하는 것은 불가능하다고 볼 수 있다.
-
-발생한 에러에 대해 대처하지 않고 방치한다면 프로그램을 강제 종료될 것이다.
-
-따라서 try catch 문 등을 사용해 발생한 에러를 적절하게 대응하면 프로그래밍이 강제 종료되지 않고 계속해서 코드를 실행시킬 수 있다.
-
-<details>
-<summary>에러 캐치</summary>
-
-#### 에러를 처리를 하지 않을 경우
-
-```js
-console.log("[Start]");
-
-foo(); // ReferenceError: foo is not defined
-
-console.log("[End]");
-```
-
-```
-// 터미널 💻
-
-[Start]
-/Users/leejunhee/junheeDB/CaptainP/upgrade_javascript/DEEPDIVE/error.js:3
-foo(); // ReferenceError: foo is not defined
-^
-
-ReferenceError: foo is not defined
-
-[End] 는 빛을 보지 못하고 종료되었다...
-```
-
-#### 에러 처리를 할 경우
-
-```js
-console.log("[Start]");
-
-try {
-  foo();
-} catch (error) {
-  console.error("[에러 발생]", error);
-  // [에러 발생] ReferenceError: foo is not defined
-}
-
-// 발생한 에러에 적절한 대응을 하면 프로그램이 강제 종료되지 않는다.
-console.log("[End]");
-```
-
-```
-[Start]
-[에러 발생] ReferenceError: foo is not defined
-    at Object.<anonymous> (/...파일이 실행된 상대 경로)
-    at Module._compile (internal/modules/cjs/loader.js:1063:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
-    at Module.load (internal/modules/cjs/loader.js:928:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
-    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
-    at internal/main/run_main_module.js:17:47
-[End]
-```
-
-</details>
+- 에러가 없는 코드 작성은 불가능하므로 이를 방치한다면 프로그램은 강제 종료될 것이다. 따라서 try catch 문 등을 사용해 발생한 에러를 적절하게 대응하면 프로그래밍이 강제 종료되지 않고 계속해서 코드를 실행시킬 수 있다.
 
 ### `자바스크립트에서 에러를 처리하는 방법에는 뭐가 있을까요?`
-
 1. try catch finally
 2. Error 객체
 3. throw 문
 
-<details>
-<summary>Error 객체</summary>
-
-<br/>
-
-Error 생성자 함수는 에러 객체를 생성한다.
-
-Error 생성자 함수에는 에러를 상세히 설명하는 에러 메시지를 인수로 전달할 수 있다.
-
-```js
-const error = new Error("invalid");
-```
-
-자바스크립트는 Error 생성자 함수를 포함해 7가지의 에러 객체를 생성할 수 있는 Error 생성자 함수를 제공한다.
-
-해당 함수가 생성한 에러 객체의 프로토타입은 모두 Error.prototype을 상속받는다.
-
-| 생성자 함수    | 인스턴스                                                                       |
-| :------------- | :----------------------------------------------------------------------------- |
-| Error          | 일반적 에러 객체                                                               |
-| SyntaxError    | 자바스크립트 문법에 맞지 않는 문을 해석할 때 발생하는 에러 객체                |
-| ReferenceError | 참조할 수 없는 식별자를 참조했을 때 발생하는 에러 객체                         |
-| TypeError      | 피연산자 또는 인수의 데이터 타입이 유효하지 않을 때 발생하는 에러 객체         |
-| RangeError     | 숫자값의 허용 범위를 벗어낫을 때 발생하는 에러 객체                            |
-| URIError       | encodeURI 또는 decodeURI 함수에 부적절한 인수를 전달했을 때 발생하는 에러 객체 |
-| EvalError      | eval 함수에서 발생하는 에러 객체                                               |
-
-</details>
-
-<details>
-<summary>throw 문</summary>
-
-<br/>
-
-Error 생성자 함수로 에러 객체를 생성한다고 에러가 발생하는 것은 아니다.
-
-즉, 에러 객체 생성과 에러 발생은 의미가 다르다.
-
-```js
-try {
-  // 에러 객체를 생성한다고 에러가 발생하는 것은 아니다.
-  new Error("something wrong");
-} catch (error) {
-  console.log(error);
-}
-```
-
-**에러를 발생시키려면 try 코드 블록에서 throw 문으로 에러 객체를 던져야 한다**
-
-```
-throw 표현식;
-```
-
-```js
-try {
-  // 에러 객체를 던지면 catch 코드 블록이 실행되기 시작한다.
-  throw new Error("something wrong");
-} catch (error) {
-  console.log(error);
-}
-```
-
-</details>
-
 ## 모듈
 
 ### `모듈이 뭔가요?`
-
-모듈(module)이란 애플리케이션을 구성하는 개별적 요소로서 재사용 가능한 코드 조각을 말한다.
-
-일반적으로 모듈은 기능을 기준으로 파일 단위로 분리한다. 이때 모듈이 성립하려면 모듈은 자신만의 파일 스코프(모듈 스코프)를 가질 수 있어야 한다.
-
-자신만의 파일 스코프를 갖는 모듈의 자산(모듈에 포함되어 있는 변수, 함수, 객체 등)은 기본적으로 비공개 상태다. 즉, 모듈은 개별적 존재로서 애플리케이션과 분리되어 존재한다.
-
-하지만 애플리캐이션과 완전히 분리되어 개별적으로 존재하는 모듈은 재사용이 불가능하므로 존재의 의미가 없다.
-
-따라서 **모듈은 공개가 필요한 자산에 한정하여 명시적으로 선택적 공개가 가능하다.** 이를 **export** 라 한다.
-
-공개(export)의 자산은 다른 모듈에서 재사용할 수 있다. (의존성을 갖게 된다)
-
-이때 공개된 모듈의 자산을 사용하는 모듈을 **모듈 사용자(module consumer)** 라 한다. 모듈 사용자는 모듈이 **공개(export)한 자산 중 일부 또는 전체를 선택해 자신의 스코프 내로 불러들여 재사용할 수 있다.** 이를 **import** 라 한다.
-
-<img src="./images/42_1.png" alt="모듈">
-
-자바스크립트는 기본적으로 모듈이 성립하기 위해 필요한 파일 스코프와 import, export를 지원하지 않는다.
-
-따라서 자바스크립트를 클라이언트 사이드, 즉 브라우저 환경에 국한하지 않고 범용적으로 사용하려는 움직임이 생기면서 이러한 상황에 제안된 것이 **CommonJS** 와 **AMD(asynchronous module definition)** 다.
+- 모듈(module)이란 애플리케이션을 구성하는 개별적 요소로서 재사용 가능한 코드 조각을 말한다.
 
 ## 내가 뽑은 핵심질문 5개
 1. 호이스팅이 뭔가요?
+  - js 엔진은 변수나 함수가 어디서 선언이 되던 다른 코드보다 먼저 실행합니다. 런타임 이전에 실행 컨텍스트에 의해 스코프에 등록되고 이를 코드의 최상단에 있는 것처럼 어디서든지 변수를 참조할 수 있는 것처럼 만드는 특징을 변수 호이스팅이라고 합니다.
 2. 브라우저의 렌더링 과정에 대해 설명해보세요.
+  - 클라이언트에서 불러오고 싶은 파일을 서버에 요청 후, 서버에서 응답받은 HTML 파일과 CSS파일을 파싱하여 각각 DOM, CSSOM 트리를 만듭니다. 두 트리를 결합하여 렌더 트리를 만들고 이를 기반으로 각 노드의 레이아웃을 계산합니다. 계산된 값을 이용해 각 노드를 화면에 페인팅합니다. 
 3. 동기와 비동기의 차이점에 대해서 설명해줄 수 있나요?
+  - 요청을 보낸 후 응답(결과물)을 받아야지만 다음 동작이 이루어지는 방식을 동기(synchronous) 처리 방식이라고 하며 현재 실행 중인 동작이 종료되지 않아도 다음 동작을 곧바로 실행하는 방식 을 비동기(asynchronous) 처리라고 합니다. 비동기방식은 동기보다 복잡하지만 결과가 주어지는 시간을 기다리는 동안 다른 작업을 할 수 있으므로 효율적입니다.
 4. 클로저는 무엇인가요? 원리와 왜 사용하는지 설명해주세요.
-5. GET,POST가 어떻게 다르게 쓰는지 말씀해 주세요
+  - 클로저는 스코프를 이용해서 자신이 선언될 당시의 환경을 기억하는 함수의 현상이며, 해당 값에 대한 접근을 특정함수로 제한함으로써 상태를 안전하게 변경하고 유지할 수 있습니다.
+5. GET,POST가 어떻게 다르게 쓰는지 말씀해 주세요.
+  - GET은 서버의 리소스에서 데이터를 요청할 때, POST는 서버의 리소스를 새로 생성하거나 업데이트할 때 사용합니다. GET은 URL 파라미터에 요청하는 데이터를 담아 보내기 때문에 HTTP 메시지에 body가 없으며, POST는 body 에 데이터를 담아 보내기 때문에 당연히 HTTP 메시지에 body가 존재합니다.
+
+## 스터디원이 뽑은 핵심질문
+1. REST API에 대해 설명해주세요.
+  - REST API는 REST 아키텍처 스타일의 조건을 준수하고 RESTful 웹 서비스와 상호 작용할 수 있도록 하는 API(애플리케이션 프로그래밍 인터페이스)이며, 자원, 행위, 표현의 3가지 요소로 구성됩니다. 
+  - 자원이 있는 쪽이 서버고 자원을 요청하는 쪽이 클라이언트인 구조를 가지고 있고, 무상태성을 가지고, 캐싱 기능을 사용 가능하며, 서버를 다중 계층으로 구성할 수 있습니다.
+2. Promise가 뭔가요?
+  - 프로미스는 ES6에서 도입된, 콜백 함수의 문제점인 여러 개의 비동기 처리를 해결하기 위한 또 하나의 객체로 주로 서버에서 받아온 데이터를 화면에 표시할 때 사용합니다. 
+  - 비동기 처리 시점을 명확히 표현하고, 비동기 처리 작업의 수정, 삭제, 추가가 용이하며, 코드의 유지 보수성이 증가한다는 장점들이 있습니다.
+  - 프로미스의 처리과정은 대기, 이행, 실패라는 3가지 상태를 갖습니다. 
+  - Promise 생성자 함수를 new 연산자와 함께 호출하면 프로미스(Promise 객체)를 생성한다.
