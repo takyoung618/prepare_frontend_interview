@@ -33,17 +33,11 @@ python으로 작성된 코드의 예시들이 있지만, JS와는 큰 차이가 
 - [그래프](#그래프)
 
 ### 자료구조란 무엇인가요
-
-자료구조란 대량의 데이터를 효율적으로 관리할 수 있는 데이터의 구조를 의미합니다
-
-코드 상에서 효율적으로 데이터를 처리하기 위해, 데이터 특성에 따라, 체계적으로 데이터를 구조화해야 합니다
-
-어떤 데이터 구조를 사용하느냐에 따라, 코드의 효율이 달라질 수 있습니다
+자료구조란 대량의 데이터를 효율적으로 관리할 수 있는 데이터의 구조를 의미하며, 어떤 데이터 구조를 사용하느냐에 따라, 코드의 효율이 달라질 수 있습니다
 
 <br/>
 
 #### 효율적으로 데이터를 관리해야 하는 이유 (예)
-
 우편번호: 5자리 우편번호로 국가의 기초구역을 제공
 
 5자리 우편번호에서 앞 3자리는 시, 군, 자치구를 표기, 뒤 2자리는 일련번호로 구성
@@ -70,13 +64,11 @@ XX학년, X반, X번 학생
 <br/>
 
 #### 선형 구조란 무엇인가요
-
 **선형 구조 (Linear Structure)**
 
 > 데이터들이 일렬로 쭉 저장되어 있는 형태
 
 #### 비 선형 구조란 무엇인가요
-
 **비 선형 구조 (Non-Linear Structure)**
 
 > 데이터가 트리 형태로 저장되어 있다고 생각하고 사용하는 자료구조
@@ -84,85 +76,16 @@ XX학년, X반, X번 학생
 <br/>
 
 ### 리스트
-
 - 데이터를 나열하고, 각 데이터를 인덱스에 대응하도록 구성한 데이터 구조
-- 파이썬에서는 리스트 타입이 배열 기능을 제공함
-
-`리스트는 왜 필요한가요?`
-
-- 같은 종류의 데이터를 효율적으로 관리하기 위해
-- 같은 종류의 데이터를 순차적으로 저장하기 위해
+- 같은 종류의 데이터를 효율적으로 관리하고 순차적으로 저장하기 위해 필요합니다.
 
 `장점`
-
 - 빠른 접근이 가능하다
 - 첫 데이터의 위치 `[0]`에서 상대적인 위치로 데이터에 접근이 가능하다 (인덱스 번호로 접근이 가능하다)
 
 `단점`
-
 - 데이터 추가/ 삭제가 어렵다
 - 미리 최대 길이를 지정해야 함
-
-`make a list using C`
-
-- C 언어에서 배열을 사용할 경우 배열의 최대 길이를 사전에 정의해줘야 한다
-
-```C
-#include <stdio.h>
-
-int main(int argc, char * argv[])
-{
-    char country[3] = "US";
-    printf ("%c%c\n", country[0], country[1]);
-    printf ("%s\n", country);
-    return 0;
-}
-```
-
-`make a list using python`
-
-- Python의 경우 배열(문자열)의 길이를 사전에 정해주지 않아도 동작한다
-- JS또한 길이를 사전에 정해주지 않아도 동작한다
-- 이러한 특징 때문에 파이썬과 JS의 배열이 자료구조의 배열과 같다고 볼 수는 없다
-
-```py
-country = 'US'
-print (country)
-
->>> US
-
-country = country + 'A'
-print(country)
-
->>> USA
-```
-
-`1 차원 배열`
-
-```py
-# 1차원 배열: 리스트로 구현시
-data_list = [1, 2, 3, 4, 5]
-
-print(data_list)
->>>
-
-[1,2,3,4,5]
-```
-
-`2 차원 배열`
-
-```py
-# 2차원 배열: 리스트로 구현시
-data_list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-
-print(data_list)
-
-[
-  [1,2,3],
-  [4,5,6],
-  [7,8,9]
-]
-```
 
 <br/>
 
@@ -172,19 +95,13 @@ Queue 구조
 
 - 줄을 서는 행위와 유사
 - 가장 먼저 넣은 데이터를 가장 먼저 꺼낼 수 있는 구조
-- 음식점에서 가장 먼저 줄을 선 사람이 제일 먼저 음식점에 입장하는 것과 동일
 - FIFO(First-In, First-Out) 또는 LILO(Last-In, Last-Out) 방식으로 스택과 꺼내는 순서가 반대
 
 <img src="https://camo.githubusercontent.com/a7ee55bf3532f3715605a7e4e5af65ee15822fe0e94a5d414ecfa4059c2e331d/68747470733a2f2f7777772e66756e2d636f64696e672e6f72672f30305f496d616765732f71756575652e706e67" alt="큐">
 
-- 출처: http://www.stoimen.com/blog/2012/06/05/computer-algorithms-stack-and-queue-data-structure/
-
-<img src="https://github.com/junh0328/zero_base_algorithm/raw/main/images/queue.gif" alt="그림으로 보는 큐">
-
 <br/>
 
 #### 알아둘 용어
-
 - Enqueue: 큐에 데이터를 넣는 기능 (JS에서 push)
 - Dequeue: 큐에서 데이터를 꺼내는 기능 (JS에서 shift)
 
@@ -198,110 +115,6 @@ Queue 구조
 
 Queue(): 가장 일반적인 큐 자료 구조
 
-<details>
-
-```py
-# 큐 (Queue)
-
-import queue
-
-# FIFO QUEUE (일반적인 구조의 큐) 사용하기
-
-data_queue = queue.Queue()
-
-print('data_queue:', data_queue)
-print('type:', type(data_queue))
-
-print()
-
-# 데이터 삽입 (put)
-
-data_queue.put(1)
-data_queue.put(2)
-data_queue.put(3)
-
-print('data_queue.qsize():', data_queue.qsize()) >>> 3
-
-print()
-
-# 데이터 추출 (get)
-
-print('data_queue.get():', data_queue.get()) >>> 1
-print('data_queue.get():', data_queue.get()) >>> 2
-print('data_queue.get():', data_queue.get()) >>> 3
-
-```
-
-</details>
-
-LifoQueue(): 나중에 입력된 데이터가 먼저 출력되는 구조 (스택 구조라고 보면 됨)
-
-<details>
-
-```py
-import queue
-
-# LIFO QUEUE (스택과 같은 구조의 큐) 사용하기
-
-data_queue = queue.LifoQueue()
-
-print('data_queue:', data_queue)
-print('type:', type(data_queue))
-
-print()
-
-# 데이터 삽입 (put)
-
-data_queue.put(1)
-data_queue.put(2)
-data_queue.put(3)
-
-print('data_queue.qsize():', data_queue.qsize()) >>> 3
-
-print()
-
-# 데이터 추출 (get)
-
-print('data_queue.get():', data_queue.get()) >>> 3
-print('data_queue.get():', data_queue.get()) >>> 2
-print('data_queue.get():', data_queue.get()) >>> 1
-
-```
-
-</details>
-
-PriorityQueue(): 데이터마다 우선순위를 넣어서, 우선순위가 높은 순으로 데이터 출력
-
-<details>
-
-```py
-# PriorityQueue() 우선 순위가 있는 큐 만들기
-
-import queue
-
-data_queue = queue.PriorityQueue()
-
-# - 튜플 형식 ( , )으로 데이터를 삽인한다
-# - 숫자가 낮을수록 우선순위가 높다 (1 <<<<< 우선 순위가 높음 , .... , 15 <<<< 우선 순위가 낮음)
-# - 우선순위가 높은 튜플이 먼저 Dequeue 된다
-
-data_queue.put((10, "korea"))
-data_queue.put((5, 1))
-data_queue.put((15, "china"))
-
-print()
-
-print(data_queue.qsize())  # >>> 3
-
-print()
-
-print(data_queue.get())  # >>> (5,1)
-print(data_queue.get())  # >>> (10, 'korea')
-print(data_queue.get())  # >>> (15, 'china')
-
-```
-
-</details>
 
 #### 어디에 큐가 많이 쓰일까?
 
@@ -384,76 +197,6 @@ pop(): 데이터를 스택에서 꺼내기
 
 <br/>
 
-#### 파이썬을 통해 스택 구조 살펴보기
-
-list 자료형의 내장 메서드로 append(push), pop() 메서드를 제공한다
-
-```py
-# 스택 (Stack)
-
-# 큐와 달리 파이썬, JS 에서 기본 제공하는 리스트를 통해서 구현이 가능하다
-# 큐의 경우 data = queue.Queue() 와 같이 인스턴스로 만들어서 사용했었음
-
-# append: 삽입하기 (push)
-# pop: 꺼내기 (pop)
-
-data_stack = list()
-
-data_stack.append(1)
-data_stack.append(2)
-
-print('data_stack:', data_stack) >>> [1,2]
-
-print()
-
-data_stack.pop()
-
-print('① data_stack.pop():', data_stack) >>> [1]
-
-print()
-
-data_stack.pop()
-
-print('② data_stack.pop():', data_stack) >>> [0]
-
-
-```
-
-#### 프로그래밍 연습
-
-리스트 변수로 스택을 다루는 pop, push 기능 구현해보기
-
-```py
-stack_list = list()
-
-
-def push(data):
-    stack_list.append(data)
-
-
-def pop():
-    data = stack_list[-1]
-    del stack_list[-1]
-    return data
-
-
-for elem in range(10):
-    push(elem)
-
-
-print('stack_list', stack_list)
-# >>> stack_list [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-
-print()
-
-pop()
-
-print('stack_list', stack_list)
-# >>> stack_list [0, 1, 2, 3, 4, 5, 6, 7, 8]
-```
-
-<br/>
-
 ### 링크드 리스트
 
 Linked List 구조
@@ -461,7 +204,6 @@ Linked List 구조
 - 연결 리스트라고도 한다
 - 배열은 순차적으로 연결된 공간에 데이터를 나열하는 데이터 구조
 - 링크드 리스트는 떨어진 곳에 존재하는 데이터를 화살표로 연결해서 관리하는 데이터 구조
-- 본래 C언어에서는 주요한 데이터 구조이지만, 파이썬은 리스트 타입이 링크드 리스트의 기능을 모두 지원
 
 `링크드 리스트 기본 구조와 용어`
 
@@ -516,11 +258,8 @@ Linked List 구조
 해쉬 테이블(Hash Table): 키(Key)에 데이터(Value)를 저장하는 데이터 구조
 
 - Key를 통해 바로 데이터를 받아올 수 있으므로, 속도가 획기적으로 빨라짐
-- (특정 조건에 맞춰 배열을 모두 순회할 필요가 없다는 소리)
 - 파이썬 딕셔너리(Dictionary) 타입이 해쉬 테이블의 예: Key를 가지고 바로 데이터(Value)를 꺼낼 수 있음
 - 보통 배열로 미리 Hash Table 사이즈만큼 생성 후에 사용 (공간과 탐색 시간을 맞바꾸는 기법)
-- 해쉬 테이블의 길이(슬롯의 개수)를 늘리는 방법
-- 단, 파이썬에서는 해쉬를 별도로 구현할 이유가 없음 (딕셔너리 타입 { 'key': 'value' } 을 제공하기 때문)
 - JS 또한 별도로 구현할 필요가 없다 (객체 타입 { key: 'value' } 을 제공하기 때문)
 
 `알아둘 용어`
@@ -806,3 +545,8 @@ O(1) < O( 𝑙𝑜𝑔𝑛 ) < O(n) < O(n 𝑙𝑜𝑔𝑛 ) < O( 𝑛2 ) < O( 2
 |     사이클     | 사이클 가능함, 순환 및 비순환 그래프 모두 존재함   | 비순환 그래프로 사이클이 존재하지 않음        |
 |   루트 노드    | 루트 노드 존재하지 않음                            | 루트 노드 존재함                              |
 | 부모/자식 관계 | 부모 자식 개념이 존재하지 않음                     | 부모 자식 관계가 존재함                       |
+
+### 내가 뽑은 핵심질문
+1. 스택과 큐는 무엇이고 둘의 차이는 무엇인지 설명하시오.
+- 스택은 시간 순서에 따라 자료가 쌓여 가장 마지막에 삽입된 자료가 가장 먼저 삭제된다는 LIFO구조를 가진다.
+- 큐란 한 곳을 통해 삽입, 삭제가 이루어지는 스택과는 달리 큐는 한쪽 끝에선 삽입 작업이, 다른 쪽 끝에서는 삭제 작업이 양쪽으로 이루어진다. 
